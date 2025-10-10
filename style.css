@@ -1,0 +1,92 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.button{
+    border-radius: 38px;
+    padding: 15px 26px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #89CE14;
+}
+.bg{
+    background: var(--Gredient, linear-gradient(90deg, #6DA015 0%, #46C0A2 100%));
+}
+.text{
+    color: #89CE14;
+}
+.hover-btn:hover{
+    background: var(--Gredient, linear-gradient(90deg, #6DA015 0%, #46C0A2 100%));
+    color: white;
+    transition: 1s;
+}
+.arrow {
+  padding: 23px 26px;
+  border: 2px solid #89CE14;
+  border-radius: 50%;
+  background-color: #FFFFFF4D;
+  color: #89CE14;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #89CE14;
+    color: white;
+    transition: all 0.3s ease;
+  }
+}
+.card{
+    border-radius: 10.399px;
+    border: 1.3px solid #6DA015;
+    background: linear-gradient(90deg, rgba(109, 160, 21, 0.05) 0%, rgba(70, 192, 162, 0.05) 100%);
+
+/* Shadow 02 */
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.card1{
+    border-radius: 10.399px;
+    border: 1.3px solid #6DA015;
+    background: linear-gradient(90deg, rgba(109, 160, 21, 0.05) 0%, rgba(70, 192, 162, 0.05) 100%);
+
+/* Shadow 02 */
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.bg-text{
+  background: var(--Gredient, linear-gradient(90deg, #6DA015 0%, #46C0A2 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.last-btn{
+  background: var(--Brand-Color-Primary-Color, #0B2A77);
+}
+header{
+  height: 100vh;
+}
+.header{
+  height: 8vh;
+}
+.header1{
+  height: 50vh;
+}
+.about-v-text{
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.input-border{
+  border-bottom: 2px solid gray;
+}
+.rate{
+  border: 1px solid #DCE8C6;
+  background: linear-gradient(90deg, rgba(109, 160, 21, 0.08) 0%, rgba(70, 192, 162, 0.08) 100%);
+}
+.rate1{
+  background: linear-gradient(90deg, rgba(135, 200, 21, 0.08) 0%, rgba(67, 204, 170, 0.08) 100%);
+}
+.active{
+
+}
