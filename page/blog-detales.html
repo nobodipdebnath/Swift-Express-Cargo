@@ -42,7 +42,7 @@
           /></a>
         </div>
         <div class="md:hidden">
-          <i class="fa-solid text-white text-3xl fa-bars"></i>
+          <i id="menu-icon" class="fa-solid text-white text-3xl fa-bars"></i>
         </div>
         <div class="hidden lg:block">
           <ul
@@ -67,8 +67,10 @@
           </ul>
         </div>
         <div class="flex justify-between gap-3 hidden md:block">
-          <button class="button bg" onclick="my_modal_4.showModal()">Sign Up</button>
-            <dialog id="my_modal_4" class="modal">
+          <button class="button bg" onclick="my_modal_4.showModal()">
+            Sign Up
+          </button>
+          <dialog id="my_modal_4" class="modal">
             <div class="modal-box">
               <form method="dialog">
                 <button
@@ -78,41 +80,82 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Sign Up</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">log in</span></a></p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Sign Up
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href=""
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >log in</span
+                    ></a
+                  >
+                </p>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Your Name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Your Email Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="email">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="email"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Mobile Number</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="number">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="number"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Home Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                    <p class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]">Hide</p>
+                    <p
+                      class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]"
+                    >
+                      Hide
+                    </p>
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
+                      <input
+                        type="checkbox"
+                        name=""
+                        pattern="Remember me"
+                        id=""
+                      />
                       <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
                     </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                    <p
+                      class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                    >
+                      forgot your password
+                    </p>
                   </div>
                   <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
+                    <button
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
+                    >
+                      log in
+                    </button>
                   </div>
                 </div>
               </div>
@@ -134,29 +177,59 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Log in</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">Sign up</span></a></p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Log in
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href=""
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Sign up</span
+                    ></a
+                  >
+                </p>
                 <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Email address or user name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <p class="text-lg text-[#7B7B7B] py-2">
+                    Email address or user name
+                  </p>
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <p class="text-lg text-[#7B7B7B] py-2">Password</p>
                     <p class="text-lg text-[#7B7B7B] py-2">Hide</p>
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
+                      <input
+                        type="checkbox"
+                        name=""
+                        pattern="Remember me"
+                        id=""
+                      />
                       <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
                     </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                    <p
+                      class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                    >
+                      forgot your password
+                    </p>
                   </div>
                   <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
+                    <button
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
+                    >
+                      log in
+                    </button>
                   </div>
                 </div>
               </div>
@@ -164,47 +237,184 @@
           </dialog>
         </div>
       </nav>
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-[-100%] lg:hidden w-[70%] max-w-sm h-full bg-gray-500 bg-opacity-95 p-8 transition-all duration-500 ease-in-out z-50"
+      >
+        <i
+          id="close-icon"
+          class="fa-solid fa-xmark text-white text-3xl absolute top-5 right-6 cursor-pointer"
+        ></i>
+        <ul class="flex flex-col gap-5 text-white font-medium text-xl mt-20">
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="reat.html"
+              >Rates</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="cost.html"
+              >Cost Calculator</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="contact.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="mt-8 pt-6 border-t border-gray-700">
+            <button
+              class="w-full py-3 rounded-lg bg-[#89CE14] text-white font-bold"
+              onclick="my_modal_4.showModal()"
+            >
+              Sign Up
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full py-3 mt-2 rounded-lg border border-white text-white font-bold"
+              onclick="my_modal_3.showModal()"
+            >
+              Sign In
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main Section Start -->
     <main>
-        <section class="px-[10%] py-[100px] bg-gradient-to-br from-[#c4e291] to-[#a0e2d1]">
-            <h1 class="text-5xl font-bold text-[#333333] text-center md:text-start">Blog Details</h1>
-            <p class="text-xl text-[606060] py-2 text-center md:text-start">Lorem ipsum dolor sit amet consectetur. Congue lacinia <br> tempor orci tellus sollicitudin morbi. Duis massa sit </p>
-        </section>
-        <section class="px-[10%] py-12">
-            <img class="lg:h-[700px] h-auto w-full rounded-xl" src="../images/blog-detal.jpg" alt="">
-        </section>
-        <section class="lg:px-[20%] md:px-[15%] px-[5%]">
-            <h1 class="text-3xl text-[#000000] font-semibold">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="py-2 text-lg text-[#606060]">Lorem ipsum dolor sit amet consectetur. Vitae amet risus egestas interdum sit vestibulum. Massa tellus orci ultrices sem. Dapibus condimentum quis cursus ut velit tincidunt. Accumsan vestibulum scelerisque etiam metus. Sit id ornare aliquam nunc amet donec volutpat vitae consequat. Fames enim tristique duis suspendisse. Suspendisse in nibh placerat sed neque turpis amet adipiscing orci. Dis felis viverra sed gravida pharetra interdum. Dignissim eu mauris risus bibendum suspendisse mi arcu turpis. A tincidunt id eget odio vel mattis.</p>
-            
-            <h1 class="text-3xl text-[#000000] font-semibold">Suscipi est sit 2025 A1 sollicit?</h1>
-            <p class="py-2 text-lg text-[#606060]">Quam Donec ut Malesuad, cum 2025 reprehen curabitu 24 Pretiu Duis, voluptatu eos sed quidem praese. Saep iaculis eos sit sedadipiscing tristiqu non elementums et via fugia.</p>
-            <img class="rounded-lg md:h-[500px] h-auto w-full" src="../images/blog-deral2.jpg" alt="">
+      <section
+        class="px-[10%] py-[100px] bg-gradient-to-br from-[#c4e291] to-[#a0e2d1]"
+      >
+        <h1 class="text-5xl font-bold text-[#333333] text-center md:text-start">
+          Blog Details
+        </h1>
+        <p class="text-xl text-[606060] py-2 text-center md:text-start">
+          Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />
+          tempor orci tellus sollicitudin morbi. Duis massa sit
+        </p>
+      </section>
+      <section class="px-[10%] py-12">
+        <img
+          class="lg:h-[700px] h-auto w-full rounded-xl"
+          src="../images/blog-detal.jpg"
+          alt=""
+        />
+      </section>
+      <section class="lg:px-[20%] md:px-[15%] px-[5%]">
+        <h1 class="text-3xl text-[#000000] font-semibold">
+          Lorem ipsum dolor sit amet consectetur.
+        </h1>
+        <p class="py-2 text-lg text-[#606060]">
+          Lorem ipsum dolor sit amet consectetur. Vitae amet risus egestas
+          interdum sit vestibulum. Massa tellus orci ultrices sem. Dapibus
+          condimentum quis cursus ut velit tincidunt. Accumsan vestibulum
+          scelerisque etiam metus. Sit id ornare aliquam nunc amet donec
+          volutpat vitae consequat. Fames enim tristique duis suspendisse.
+          Suspendisse in nibh placerat sed neque turpis amet adipiscing orci.
+          Dis felis viverra sed gravida pharetra interdum. Dignissim eu mauris
+          risus bibendum suspendisse mi arcu turpis. A tincidunt id eget odio
+          vel mattis.
+        </p>
 
-            <h1  class="text-3xl text-[#000000] font-semibold mt-4">Why do we use it?</h1>
-            <p class="py-2 text-lg text-[#606060]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <h1  class="text-3xl text-[#000000] font-semibold">March: A Classic Start Down Under</h1>
-            <p class="py-2 text-lg text-[#606060]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <p class="py-2 text-lg text-[#606060] mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci nesciunt cum, laboriosam perferendis tempora cumque consequuntur soluta asperiores at necessitatibus nemo nihil reiciendis, suscipit voluptatum iusto porro pariatur molestias.
-            Non culpa minus reiciendis dolores fuga deleniti. Hic obcaecati repellendus et eaque esse. Delectus distinctio, aliquid consequatur quibusdam perspiciatis qui. Aliquid quam ab ratione eveniet? Autem necessitatibus minima mollitia dolores!</p>
-            <h1  class="text-3xl text-[#000000] font-semibold">Digital Services Act</h1>
-            <p class="py-2 text-lg text-[#606060]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h1 class="text-3xl text-[#000000] font-semibold">
+          Suscipi est sit 2025 A1 sollicit?
+        </h1>
+        <p class="py-2 text-lg text-[#606060]">
+          Quam Donec ut Malesuad, cum 2025 reprehen curabitu 24 Pretiu Duis,
+          voluptatu eos sed quidem praese. Saep iaculis eos sit sedadipiscing
+          tristiqu non elementums et via fugia.
+        </p>
+        <img
+          class="rounded-lg md:h-[500px] h-auto w-full"
+          src="../images/blog-deral2.jpg"
+          alt=""
+        />
 
-        </section>
+        <h1 class="text-3xl text-[#000000] font-semibold mt-4">
+          Why do we use it?
+        </h1>
+        <p class="py-2 text-lg text-[#606060]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <h1 class="text-3xl text-[#000000] font-semibold">
+          March: A Classic Start Down Under
+        </h1>
+        <p class="py-2 text-lg text-[#606060]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <p class="py-2 text-lg text-[#606060] mt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          adipisci nesciunt cum, laboriosam perferendis tempora cumque
+          consequuntur soluta asperiores at necessitatibus nemo nihil
+          reiciendis, suscipit voluptatum iusto porro pariatur molestias. Non
+          culpa minus reiciendis dolores fuga deleniti. Hic obcaecati
+          repellendus et eaque esse. Delectus distinctio, aliquid consequatur
+          quibusdam perspiciatis qui. Aliquid quam ab ratione eveniet? Autem
+          necessitatibus minima mollitia dolores!
+        </p>
+        <h1 class="text-3xl text-[#000000] font-semibold">
+          Digital Services Act
+        </h1>
+        <p class="py-2 text-lg text-[#606060]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </section>
       <!-- Blog section start -->
       <section class="px-[10%] py-[100px]">
-        <h1 class="text-4xl text-[#333333] font-bold text-center md:text-start">Related Blog</h1>
+        <h1 class="text-4xl text-[#333333] font-bold text-center md:text-start">
+          Related Blog
+        </h1>
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-xl text-[#606060] mt-2 text-center md:text-start">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has <br />
             been the industry's standard dummy text ever since the 1500s
           </p>
-          <a href="blog.html"><button class="bg-transparent button text hover-btn duration-500">
-            view all
-          </button></a>
+          <a href="blog.html"
+            ><button class="bg-transparent button text hover-btn duration-500">
+              view all
+            </button></a
+          >
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           <div class="shadow-lg rounded-xl relative">
@@ -221,11 +431,13 @@
             <div
               class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
-              <a href="blog-detales.html"><button
-                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+              <a href="blog-detales.html"
+                ><button
+                  class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button></a>
             </div>
           </div>
           <div class="shadow-lg rounded-xl relative mt-10 md:mt-0">
@@ -242,11 +454,13 @@
             <div
               class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
-              <a href="blog-detales.html"><button
-                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+              <a href="blog-detales.html"
+                ><button
+                  class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button></a>
             </div>
           </div>
           <div class="shadow-lg rounded-xl relative mt-10 md:mt-0">
@@ -263,16 +477,18 @@
             <div
               class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
-              <a href="blog-detales.html"><button
-                class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+              <a href="blog-detales.html"
+                ><button
+                  class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+                >
+                  Read More
+                </button></a
               >
-                Read More
-              </button></a>
             </div>
           </div>
         </div>
       </section>
-      <!-- Blog section end -->        
+      <!-- Blog section end -->
     </main>
     <!-- Main Section End -->
 
@@ -373,7 +589,9 @@
           <button class="absolute button bg right-1">Subscrube</button>
         </div>
         <div class="flex justify-center md:justify-start gap-6">
-          <a href="https://www.facebook.com/profile.php?id=61554300737206" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61554300737206"
+            target="_blank"
             ><i
               class="fa-brands fa-facebook-f px-4 cursor-pointer hover:bg-[#89CE14] duration-500 p-3 border-[#89CE14] text-white text-2xl border rounded-full"
             ></i
@@ -393,4 +611,5 @@
     </footer>
     <!-- Footer -->
   </body>
+  <script src="../script/script.js"></script>
 </html>

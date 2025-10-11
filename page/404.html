@@ -42,7 +42,7 @@
           /></a>
         </div>
         <div class="md:hidden">
-          <i class="fa-solid text-white text-3xl fa-bars"></i>
+          <i id="menu-icon" class="fa-solid text-white text-3xl fa-bars"></i>
         </div>
         <div class="hidden lg:block">
           <ul
@@ -237,6 +237,63 @@
           </dialog>
         </div>
       </nav>
+            <div
+        id="mobile-menu"
+        class="fixed top-0 right-[-100%] lg:hidden w-[70%] max-w-sm h-full bg-gray-500 bg-opacity-95 p-8 transition-all duration-500 ease-in-out z-50"
+      >
+        <i
+          id="close-icon"
+          class="fa-solid fa-xmark text-white text-3xl absolute top-5 right-6 cursor-pointer"
+        ></i>
+        <ul class="flex flex-col gap-5 text-white font-medium text-xl mt-20">
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="reat.html"
+              >Rates</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="cost.html"
+              >Cost Calculator</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="contact.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="mt-8 pt-6 border-t border-gray-700">
+            <button
+              class="w-full py-3 rounded-lg bg-[#89CE14] text-white font-bold"
+              onclick="my_modal_4.showModal()"
+            >
+              Sign Up
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full py-3 mt-2 rounded-lg border border-white text-white font-bold"
+              onclick="my_modal_3.showModal()"
+            >
+              Sign In
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <div class="flex justify-center items-center mt-20 md:mt-10">
@@ -254,4 +311,5 @@
       </div>
     </main>
   </body>
+  <script src="../script/script.js"></script>
 </html>
