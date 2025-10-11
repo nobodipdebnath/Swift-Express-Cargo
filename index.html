@@ -27,223 +27,297 @@
     <!-- colors -->
   </head>
   <body class="roboto">
-    <header class="bg-center bg-cover h-full relative">
-      <div class="bg-[url('images/banner.png')]">
-        <nav
-          class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
-        >
-          <div>
-            <a href="index.html"
-              ><img
-                class="h-[60px] cursor-pointer"
-                src="images/logo.png"
-                alt=""
-            /></a>
-          </div>
-          <div class="md:hidden">
-            <i class="fa-solid text-white text-3xl fa-bars"></i>
-          </div>
-          <div class="hidden lg:block">
-            <ul
-              class="flex justify-between items-center gap-6 text-white font-medium text-lg"
-            >
-              <a class="hover:text-[#89CE14]" href="index.html"
-                ><li>Home</li></a
-              >
+    <header
+      class="bg-center bg-cover h-full relative bg-[url('images/banner.png')]"
+    >
+      <nav
+        class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
+      >
+        <div>
+          <a href="index.html">
+            <img
+              class="h-[60px] cursor-pointer"
+              src="images/logo.png"
+              alt="Swift Express Cargo Logo"
+            />
+          </a>
+        </div>
+        <div class="md:hidden">
+          <i id="menu-icon" class="fa-solid text-white text-3xl fa-bars"></i>
+        </div>
+        <div class="hidden lg:block">
+          <ul
+            class="flex justify-between items-center gap-6 text-white font-medium text-lg"
+          >
+            <li><a class="hover:text-[#89CE14]" href="index.html">Home</a></li>
+            <li>
               <a class="hover:text-[#89CE14]" href="/page/services.html"
-                ><li>Services</li></a
+                >Services</a
               >
+            </li>
+            <li>
               <a class="hover:text-[#89CE14]" href="/page/about.html"
-                ><li>About us</li></a
+                >About us</a
               >
-              <a class="hover:text-[#89CE14]" href="page/reat.html"
-                ><li>Rates</li></a
-              >
+            </li>
+            <li>
+              <a class="hover:text-[#89CE14]" href="page/reat.html">Rates</a>
+            </li>
+            <li>
               <a class="hover:text-[#89CE14]" href="page/cost.html"
-                ><li>Cost Calculator</li></a
+                >Cost Calculator</a
               >
+            </li>
+            <li>
               <a class="hover:text-[#89CE14]" href="page/contact.html"
-                ><li>Contact Us</li></a
+                >Contact Us</a
               >
-            </ul>
-          </div>
-          <div class="flex justify-between gap-3 hidden md:block">
-            <button class="button bg" onclick="my_modal_4.showModal()">
-              Sign Up
-            </button>
-            <dialog id="my_modal_4" class="modal">
-              <div class="modal-box">
-                <form method="dialog">
-                  <button
-                    class="text-2xl font-bold absolute right-4 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 top-2"
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:flex justify-between gap-3">
+          <button class="button bg" onclick="my_modal_4.showModal()">
+            Sign Up
+          </button>
+          <dialog id="my_modal_4" class="modal">
+            <div class="modal-box">
+              <form method="dialog">
+                <button
+                  class="text-2xl font-bold absolute right-4 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 top-2"
+                >
+                  ✕
+                </button>
+              </form>
+              <div>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Sign Up
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Already have an account?
+                  <a href="#"
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Log in</span
+                    ></a
                   >
-                    ✕
-                  </button>
-                </form>
-                <div>
-                  <h1 class="text-center text-4xl font-bold text-[#333333]">
-                    Sign Up
-                  </h1>
-                  <p class="text-xl text-[#606060] text-center">
-                    Don't have an account?
-                    <a href=""
-                      ><span class="text-[#46C0A2] hover:underline"
-                        >log in</span
-                      ></a
+                </p>
+                <form action="#">
+                  <div>
+                    <label
+                      for="signup-name"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Your Name</label
                     >
-                  </p>
-                  <div>
-                    <p class="text-lg text-[#7B7B7B] py-2">Your Name</p>
                     <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                      id="signup-name"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
                       type="text"
+                      required
                     />
                   </div>
                   <div>
-                    <p class="text-lg text-[#7B7B7B] py-2">
-                      Your Email Address
-                    </p>
+                    <label
+                      for="signup-email"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Your Email Address</label
+                    >
                     <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                      id="signup-email"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
                       type="email"
+                      required
                     />
                   </div>
                   <div>
-                    <p class="text-lg text-[#7B7B7B] py-2">Mobile Number</p>
+                    <label
+                      for="signup-mobile"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Mobile Number</label
+                    >
                     <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
-                      type="number"
+                      id="signup-mobile"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="tel"
+                      required
                     />
                   </div>
                   <div>
-                    <p class="text-lg text-[#7B7B7B] py-2">Home Address</p>
+                    <label
+                      for="signup-address"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Home Address</label
+                    >
                     <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                      id="signup-address"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
                       type="text"
                     />
                   </div>
                   <div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                      <p
-                        class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]"
-                      >
-                        Hide
-                      </p>
-                    </div>
+                    <label
+                      for="signup-password"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Password</label
+                    >
                     <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                      id="signup-password"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="password"
+                      required
+                    />
+                  </div>
+                  <div class="flex justify-center items-center mt-6">
+                    <button
+                      type="submit"
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer bg-[#46C0A2] hover:bg-[#3aa98b]"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+          <button
+            onclick="my_modal_3.showModal()"
+            class="bg-transparent button text hover-btn duration-500"
+          >
+            Sign In
+          </button>
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box">
+              <form method="dialog">
+                <button
+                  class="text-2xl font-bold absolute right-4 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 top-2"
+                >
+                  ✕
+                </button>
+              </form>
+              <div>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Log In
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href="#"
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Sign up</span
+                    ></a
+                  >
+                </p>
+                <form action="#">
+                  <div>
+                    <label
+                      for="login-email"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Email address or user name</label
+                    >
+                    <input
+                      id="login-email"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
                       type="text"
+                      required
                     />
                   </div>
                   <div>
-                    <div class="flex justify-between items-center">
-                      <div class="flex gap-2">
+                    <label
+                      for="login-password"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Password</label
+                    >
+                    <input
+                      id="login-password"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="password"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center mt-2">
+                      <div class="flex gap-2 items-center">
                         <input
                           type="checkbox"
-                          name=""
-                          pattern="Remember me"
-                          id=""
+                          id="remember-me"
+                          class="h-4 w-4"
                         />
-                        <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
+                        <label for="remember-me" class="text-lg text-[#7B7B7B]"
+                          >Remember me</label
+                        >
                       </div>
-                      <p
+                      <a
+                        href="#"
                         class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                        >Forgot your password?</a
                       >
-                        forgot your password
-                      </p>
                     </div>
-                    <div class="flex justify-center items-center">
+                    <div class="flex justify-center items-center mt-6">
                       <button
-                        class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
+                        type="submit"
+                        class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer bg-[#46C0A2] hover:bg-[#3aa98b]"
                       >
-                        log in
+                        Log In
                       </button>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
-            </dialog>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+      <!-- Mobile Drawer Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-[-100%] lg:hidden w-[70%] max-w-sm h-full bg-gray-500 bg-opacity-95 p-8 transition-all duration-500 ease-in-out z-50"
+      >
+        <i
+          id="close-icon"
+          class="fa-solid fa-xmark text-white text-3xl absolute top-5 right-6 cursor-pointer"
+        ></i>
+        <ul class="flex flex-col gap-5 text-white font-medium text-xl mt-20">
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="page/services.html">Services</a>
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="page/about.html">About us</a>
+          </li>
+          <li><a class="hover:text-[#89CE14] block py-2" href="page/reat.html">Rates</a></li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="page/cost.html"
+              >Cost Calculator</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="page/contact.html">Contact Us</a>
+          </li>
+          <li class="mt-8 pt-6 border-t border-gray-700">
             <button
+              class="w-full py-3 rounded-lg bg-[#89CE14] text-white font-bold"
+              onclick="my_modal_4.showModal()"
+            >
+              Sign Up
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full py-3 mt-2 rounded-lg border border-white text-white font-bold"
               onclick="my_modal_3.showModal()"
-              class="bg-transparent button text hover-btn duration-500"
             >
               Sign In
             </button>
-            <dialog id="my_modal_3" class="modal">
-              <div class="modal-box">
-                <form method="dialog">
-                  <button
-                    class="text-2xl font-bold absolute right-4 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 top-2"
-                  >
-                    ✕
-                  </button>
-                </form>
-                <div>
-                  <h1 class="text-center text-4xl font-bold text-[#333333]">
-                    Log in
-                  </h1>
-                  <p class="text-xl text-[#606060] text-center">
-                    Don't have an account?
-                    <a href=""
-                      ><span class="text-[#46C0A2] hover:underline"
-                        >Sign up</span
-                      ></a
-                    >
-                  </p>
-                  <div>
-                    <p class="text-lg text-[#7B7B7B] py-2">
-                      Email address or user name
-                    </p>
-                    <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                      <p class="text-lg text-[#7B7B7B] py-2">Hide</p>
-                    </div>
-                    <input
-                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
-                      type="text"
-                    />
-                  </div>
-                  <div>
-                    <div class="flex justify-between items-center">
-                      <div class="flex gap-2">
-                        <input
-                          type="checkbox"
-                          name=""
-                          pattern="Remember me"
-                          id=""
-                        />
-                        <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
-                      </div>
-                      <p
-                        class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
-                      >
-                        forgot your password
-                      </p>
-                    </div>
-                    <div class="flex justify-center items-center">
-                      <button
-                        class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
-                      >
-                        log in
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </dialog>
-          </div>
-        </nav>
+          </li>
+        </ul>
       </div>
+
       <div class="carousel home-header w-full">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="images/banner.png" class="w-full" />
+          <img src="images/banner.png" class="w-full invisible" />
+          <!-- Invisible to avoid duplication -->
           <div
             class="absolute left-[5%] right-[5%] top-1/2 flex -translate-y-1/2 transform justify-between"
           >
@@ -256,7 +330,7 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/banner1.jpg" class="w-full" />
+          <img src="images/banner1.jpg" class="w-full" alt="Cargo Ship" />
           <div
             class="absolute left-[5%] right-[5%] top-1/2 flex -translate-y-1/2 transform justify-between"
           >
@@ -267,7 +341,7 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="images/banner2.jpg" class="w-full" />
+          <img src="images/banner2.jpg" class="w-full" alt="Cargo Plane" />
           <div
             class="absolute left-[5%] right-[5%] top-1/2 flex -translate-y-1/2 transform justify-between"
           >
@@ -278,7 +352,7 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="images/banner3.jpg" class="w-full" />
+          <img src="images/banner3.jpg" class="w-full" alt="Delivery Truck" />
           <div
             class="absolute left-[5%] right-[5%] top-1/2 flex -translate-y-1/2 transform justify-between"
           >
@@ -289,7 +363,8 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between items-center px-[7%] header-text">
+
+      <div class="flex justify-center items-center px-[7%] header-text">
         <div class="py-[150px] lg:w-[575px]">
           <h1
             class="text-center md:text-5xl text-3xl lg:text-6xl font-bold text-white py-3"
@@ -297,28 +372,30 @@
             Welcome to Swift Express Cargo
           </h1>
           <p class="text-center text-[20px] hidden md:block text-white pb-4">
-            Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci
-            tellus sollicitudin morbi. Duis massa sit
+            Reliable and fast logistics solutions for your business. We deliver
+            your cargo safely and on time, every time.
           </p>
-          <div
-            class="flex hidden md:block justify-center items-center relative"
-          >
+          <div class="hidden md:block relative">
             <input
-              class="py-5 w-full border border-[#89CE14] placeholder:text-[#89CE14] rounded-[38px] px-5 backdrop-blur-xl outline-none"
+              class="py-5 w-full border border-[#89CE14] placeholder:text-[#89CE14] rounded-[38px] px-5 backdrop-blur-xl outline-none bg-white/20 text-white"
               type="text"
               placeholder="Tracking Number"
-              name=""
-              id=""
+              name="tracking_number"
+              id="tracking_number"
             />
             <button class="absolute button bg right-1 top-1">Track Now</button>
           </div>
         </div>
       </div>
+
       <div class="absolute hidden lg:block right-36 bottom-40">
-        <a href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question." target="_blank">
+        <a
+          href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question."
+          target="_blank"
+        >
           <i
-          class="fa-brands fa-whatsapp text-3xl rounded-full text-white p-4 border cursor-pointer hover:shadow-lg border-[#89CE14] bg-[#89CE14]"
-        ></i>
+            class="fa-brands fa-whatsapp text-3xl rounded-full text-white p-4 border cursor-pointer hover:shadow-lg border-[#89CE14] bg-[#89CE14]"
+          ></i>
         </a>
       </div>
     </header>
