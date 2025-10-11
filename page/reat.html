@@ -28,47 +28,62 @@
   </head>
   <body class="roboto">
     <header
-      class="bg-[url('../images/reat.png')] bg-center bg-cover header1 relative"
+      class="bg-[url('../images/cost.png')] header1 bg-center bg-cover h-full relative"
     >
       <nav
         class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
       >
         <div>
-          <a href="../index.html"
-            ><img
+          <a href="../index.html">
+            <img
               class="h-[60px] cursor-pointer"
               src="../images/logo.png"
-              alt=""
-          /></a>
+              alt="Logo"
+            />
+          </a>
         </div>
-          <div class="md:hidden">
-            <i class="fa-solid text-white text-3xl fa-bars"></i>
-          </div>
+
+        <!-- Desktop Menu -->
         <div class="hidden lg:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
           >
-            <a class="hover:text-[#89CE14]" href="../index.html"
-              ><li>Home</li></a
-            >
-            <a class="hover:text-[#89CE14]" href="services.html"
-              ><li>Services</li></a
-            >
-            <a class="hover:text-[#89CE14]" href="about.html"
-              ><li>About us</li></a
-            >
-            <a class="hover:text-[#89CE14]" href="reat.html"><li>Rates</li></a>
-            <a class="hover:text-[#89CE14]" href="cost.html"
-              ><li>Cost Calculator</li></a
-            >
-            <a class="hover:text-[#89CE14]" href="contact.html"
-              ><li>Contact us</li></a
-            >
+            <li>
+              <a class="hover:text-[#89CE14]" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-[#89CE14]" href="services.html">Services</a>
+            </li>
+            <li>
+              <a class="hover:text-[#89CE14]" href="about.html">About us</a>
+            </li>
+            <li><a class="hover:text-[#89CE14]" href="reat.html">Rates</a></li>
+            <li>
+              <a class="hover:text-[#89CE14]" href="cost.html"
+                >Cost Calculator</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#89CE14]" href="contact.html">Contact Us</a>
+            </li>
           </ul>
         </div>
-        <div class="flex justify-between gap-3 hidden md:block">
-          <button class="button bg" onclick="my_modal_4.showModal()">Sign Up</button>
-            <dialog id="my_modal_4" class="modal">
+
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+          <!-- Added id="menu-icon" to make the hamburger icon clickable -->
+          <i
+            id="menu-icon"
+            class="fa-solid text-white text-3xl fa-bars cursor-pointer"
+          ></i>
+        </div>
+
+        <!-- Sign In/Sign Up Buttons for Desktop -->
+        <div class="hidden md:flex justify-between gap-3">
+          <button class="button bg" onclick="my_modal_4.showModal()">
+            Sign Up
+          </button>
+          <dialog id="my_modal_4" class="modal">
             <div class="modal-box">
               <form method="dialog">
                 <button
@@ -78,46 +93,95 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Sign Up</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">log in</span></a></p>
-                <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Your Name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
-                </div>
-                <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Your Email Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="email">
-                </div>
-                <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Mobile Number</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="number">
-                </div>
-                <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Home Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                    <p class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]">Hide</p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Sign Up
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Already have an account?
+                  <a href="#"
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Log in</span
+                    ></a
+                  >
+                </p>
+                <form action="#">
+                  <div>
+                    <label
+                      for="signup-name"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Your Name</label
+                    >
+                    <input
+                      id="signup-name"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="text"
+                      required
+                    />
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
-                      <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
-                    </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                  <div>
+                    <label
+                      for="signup-email"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Your Email Address</label
+                    >
+                    <input
+                      id="signup-email"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="email"
+                      required
+                    />
                   </div>
-                  <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
+                  <div>
+                    <label
+                      for="signup-mobile"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Mobile Number</label
+                    >
+                    <input
+                      id="signup-mobile"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="tel"
+                      required
+                    />
                   </div>
-                </div>
+                  <div>
+                    <label
+                      for="signup-address"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Home Address</label
+                    >
+                    <input
+                      id="signup-address"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="text"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="signup-password"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Password</label
+                    >
+                    <input
+                      id="signup-password"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="password"
+                      required
+                    />
+                  </div>
+                  <div class="flex justify-center items-center mt-6">
+                    <button
+                      type="submit"
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer bg-[#46C0A2] hover:bg-[#3aa98b]"
+                    >
+                      Sign Up
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </dialog>
+
           <button
             onclick="my_modal_3.showModal()"
             class="bg-transparent button text hover-btn duration-500"
@@ -134,41 +198,141 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Log in</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">Sign up</span></a></p>
-                <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Email address or user name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                    <p class="text-lg text-[#7B7B7B] py-2">Hide</p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Log In
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href="#"
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Sign up</span
+                    ></a
+                  >
+                </p>
+                <form action="#">
+                  <div>
+                    <label
+                      for="login-email"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Email address or user name</label
+                    >
+                    <input
+                      id="login-email"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="text"
+                      required
+                    />
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
-                </div>
-                <div>
-                  <div class="flex justify-between items-center">
-                    <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
-                      <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
+                  <div>
+                    <label
+                      for="login-password"
+                      class="text-lg text-[#7B7B7B] py-2 block"
+                      >Password</label
+                    >
+                    <input
+                      id="login-password"
+                      class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98]"
+                      type="password"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center mt-2">
+                      <div class="flex gap-2 items-center">
+                        <input
+                          type="checkbox"
+                          id="remember-me"
+                          class="h-4 w-4"
+                        />
+                        <label for="remember-me" class="text-lg text-[#7B7B7B]"
+                          >Remember me</label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                        >Forgot your password?</a
+                      >
                     </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                    <div class="flex justify-center items-center mt-6">
+                      <button
+                        type="submit"
+                        class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer bg-[#46C0A2] hover:bg-[#3aa98b]"
+                      >
+                        Log In
+                      </button>
+                    </div>
                   </div>
-                  <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </dialog>
         </div>
       </nav>
+
+      <!-- Mobile Drawer Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-[-100%] lg:hidden w-[70%] max-w-sm h-full bg-gray-500 bg-opacity-95 p-8 transition-all duration-500 ease-in-out z-50"
+      >
+        <i
+          id="close-icon"
+          class="fa-solid fa-xmark text-white text-3xl absolute top-5 right-6 cursor-pointer"
+        ></i>
+        <ul class="flex flex-col gap-5 text-white font-medium text-xl mt-20">
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="about.html"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="reat.html"
+              >Rates</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="cost.html"
+              >Cost Calculator</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-[#89CE14] block py-2" href="contact.html"
+              >Contact Us</a
+            >
+          </li>
+          <li class="mt-8 pt-6 border-t border-gray-700">
+            <button
+              class="w-full py-3 rounded-lg bg-[#89CE14] text-white font-bold"
+              onclick="my_modal_4.showModal()"
+            >
+              Sign Up
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full py-3 mt-2 rounded-lg border border-white text-white font-bold"
+              onclick="my_modal_3.showModal()"
+            >
+              Sign In
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Header Content -->
       <div class="flex justify-center items-center px-[7%]">
         <div class="py-[8%] w-[575px]">
-          <h1 class="text-center text-6xl font-bold text-white py-3">
-            Rate
-          </h1>
+          <h1 class="text-center text-6xl font-bold text-white py-3">Rate</h1>
           <p class="text-center text-[20px] text-white pb-6">
             Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci
             tellus sollicitudin morbi. Duis massa sit
@@ -179,166 +343,213 @@
 
     <!-- Main Section Start -->
     <main>
-        <!-- Sign up section start -->
-        <section class="px-[10%] py-[70px] relative">
-            <div class="py-[130px] bg rounded-3xl flex-col md:flex-row flex justify-between items-center p-8">
-                <div class="z-[100]">
-                  <h1 class="text-5xl font-bold text-white py-3 text-center md:text-start">Save big with smart shopping!</h1>
-                <p class="text-base text-white text-center">Inscreva-se em nossa newsletter e tenha acesso exclusivo a conteúdos educacionais, dicas de <br> aprendizado de idiomas, atualizações sobre novos cursos e promoções especiais.</p>
-                </div>
-                <div class="pt-7 z-[100]">
-                    <button class="py-3 px-8 cursor-pointer rounded-[38px] hover:bg-[#89CE14] hover:text-white duration-500 text-xl font-semibold bg-white text-[#89CE14]">Shop Now</button>
-                </div>
-                <div class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute left-20 -bottom-2"></div>
-                <div class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute right-20 top-2"></div>
-                <div class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute right-20 top-2"></div>
-                <div class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute right-20 top-2"></div>
-                <div class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute right-20 top-2"></div>
-                <div class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute right-20 top-2"></div>
-                <div class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute right-20 top-2"></div>
-            </div>
-        </section>
-        <section class="px-[15%] py-[70px]">
-          <h1 class="text-5xl font-bold text-[#333333]">Package Rates</h1>
-          <div class="border border-gray-300 rounded-xl rate mt-5">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Package Rate</h4>
-              <p>Rates (USD)</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>0.5 lb</h4>
-              <p>$10.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>1 lb</h4>
-              <p>$15.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>2 lb</h4>
-              <p>$20.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>3 lb</h4>
-              <p>$25.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Additional lb</h4>
-              <p>$30.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Packages Over 25 lb</h4>
-              <p>$50.00</p>
-            </div>
+      <!-- Sign up section start -->
+      <section class="px-[10%] py-[70px] relative">
+        <div
+          class="py-[130px] bg rounded-3xl flex-col md:flex-row flex justify-between items-center p-8"
+        >
+          <div class="z-[100]">
+            <h1
+              class="text-5xl font-bold text-white py-3 text-center md:text-start"
+            >
+              Save big with smart shopping!
+            </h1>
+            <p class="text-base text-white text-center">
+              Inscreva-se em nossa newsletter e tenha acesso exclusivo a
+              conteúdos educacionais, dicas de <br />
+              aprendizado de idiomas, atualizações sobre novos cursos e
+              promoções especiais.
+            </p>
           </div>
-        </section>
-        <section class="px-[15%] ">
-          <h1 class="text-4xl font-bold text-[#333333]">Package Rates</h1>
-          <div class="border border-gray-300 rounded-xl rate mt-5">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Package CIF Value (USD)</h4>
-              <p>Rates (USD)</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$10.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$15.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$20.00</p>
-            </div>
-
+          <div class="pt-7 z-[100]">
+            <button
+              class="py-3 px-8 cursor-pointer rounded-[38px] hover:bg-[#89CE14] hover:text-white duration-500 text-xl font-semibold bg-white text-[#89CE14]"
+            >
+              Shop Now
+            </button>
           </div>
-        </section>
-        <section class="px-[15%] py-[70px]">
-          <h1 class="text-4xl font-bold text-[#333333]">Warranty Program & Returns Services</h1>
-          <div class="border border-gray-300 rounded-xl rate mt-5">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Declared Value (USD)</h4>
-              <p>Rates (USD)</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$10.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$15.00</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>$500.00 to $1000.00</h4>
-              <p>$20.00</p>
-            </div>
-
+          <div
+            class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute left-20 -bottom-2"
+          ></div>
+          <div
+            class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+          <div
+            class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+          <div
+            class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+          <div
+            class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+          <div
+            class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+          <div
+            class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute right-20 top-2"
+          ></div>
+        </div>
+      </section>
+      <section class="px-[15%] py-[70px]">
+        <h1 class="text-5xl font-bold text-[#333333]">Package Rates</h1>
+        <div class="border border-gray-300 rounded-xl rate mt-5">
+          <div class="flex justify-between items-center p-4">
+            <h4>Package Rate</h4>
+            <p>Rates (USD)</p>
           </div>
-        </section>
-        <section class="px-[15%]">
-          <h1 class="text-4xl font-bold text-[#333333] mb-5">Additional Charges</h1>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="border-gray-300 border rounded-xl p-6 rate">
-              <h3 class="text-[#555454] text-lg font-semibold">Local Delivery</h3>
-              <p class="text-[#7B7B7B] text-base">FREE (some exceptions apply)</p>
-            </div>
-            <div class="border-gray-300 border rounded-xl p-6 rate">
-              <h3 class="text-[#555454] text-lg font-semibold">Local Delivery</h3>
-              <p class="text-[#7B7B7B] text-base">$100 + VAT (per shipment)</p>
-            </div>
-            <div class="border-gray-300 border rounded-xl p-6 rate">
-              <h3 class="text-[#555454] text-lg font-semibold">Membership Fee</h3>
-              <p class="text-[#7B7B7B] text-base">Free</p>
-            </div>
-            <div class="border-gray-300 border rounded-xl p-6 rate">
-              <h3 class="text-[#555454] text-lg font-semibold">Smart Locker Delivery</h3>
-              <p class="text-[#7B7B7B] text-base">Lorem ipsum dolor sit amet consectetur. Congue laciniatempor orci tellus sollicitudin morbi. Duis</p>
-            </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>0.5 lb</h4>
+            <p>$10.00</p>
           </div>
-        </section>
-        <section class="px-[15%] py-[70px]">
-          <h1 class="text-4xl font-bold text-[#333333]">Pickup at USA Warehouse</h1>
-          <div class="border border-gray-300 rounded-xl rate mt-5">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>Declared Value (USD)</h4>
-              <p>Rates (USD)</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>1kg</h4>
-              <p>$10.00 per kg</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>1kg</h4>
-              <p>$15.00 per kg</p>
-            </div>
-            <hr class="text-gray-200">
-            <div class="flex justify-between items-center p-4 ">
-              <h4>1kg</h4>
-              <p>$20.00 per kg</p>
-            </div>
-
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>1 lb</h4>
+            <p>$15.00</p>
           </div>
-        </section>
-        <!-- Sign up section end -->
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>2 lb</h4>
+            <p>$20.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>3 lb</h4>
+            <p>$25.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>Additional lb</h4>
+            <p>$30.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>Packages Over 25 lb</h4>
+            <p>$50.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-[15%]">
+        <h1 class="text-4xl font-bold text-[#333333]">Package Rates</h1>
+        <div class="border border-gray-300 rounded-xl rate mt-5">
+          <div class="flex justify-between items-center p-4">
+            <h4>Package CIF Value (USD)</h4>
+            <p>Rates (USD)</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$10.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$15.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$20.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-[15%] py-[70px]">
+        <h1 class="text-4xl font-bold text-[#333333]">
+          Warranty Program & Returns Services
+        </h1>
+        <div class="border border-gray-300 rounded-xl rate mt-5">
+          <div class="flex justify-between items-center p-4">
+            <h4>Declared Value (USD)</h4>
+            <p>Rates (USD)</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$10.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$15.00</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>$500.00 to $1000.00</h4>
+            <p>$20.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-[15%]">
+        <h1 class="text-4xl font-bold text-[#333333] mb-5">
+          Additional Charges
+        </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="border-gray-300 border rounded-xl p-6 rate">
+            <h3 class="text-[#555454] text-lg font-semibold">Local Delivery</h3>
+            <p class="text-[#7B7B7B] text-base">FREE (some exceptions apply)</p>
+          </div>
+          <div class="border-gray-300 border rounded-xl p-6 rate">
+            <h3 class="text-[#555454] text-lg font-semibold">Local Delivery</h3>
+            <p class="text-[#7B7B7B] text-base">$100 + VAT (per shipment)</p>
+          </div>
+          <div class="border-gray-300 border rounded-xl p-6 rate">
+            <h3 class="text-[#555454] text-lg font-semibold">Membership Fee</h3>
+            <p class="text-[#7B7B7B] text-base">Free</p>
+          </div>
+          <div class="border-gray-300 border rounded-xl p-6 rate">
+            <h3 class="text-[#555454] text-lg font-semibold">
+              Smart Locker Delivery
+            </h3>
+            <p class="text-[#7B7B7B] text-base">
+              Lorem ipsum dolor sit amet consectetur. Congue laciniatempor orci
+              tellus sollicitudin morbi. Duis
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="px-[15%] py-[70px]">
+        <h1 class="text-4xl font-bold text-[#333333]">
+          Pickup at USA Warehouse
+        </h1>
+        <div class="border border-gray-300 rounded-xl rate mt-5">
+          <div class="flex justify-between items-center p-4">
+            <h4>Declared Value (USD)</h4>
+            <p>Rates (USD)</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>1kg</h4>
+            <p>$10.00 per kg</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>1kg</h4>
+            <p>$15.00 per kg</p>
+          </div>
+          <hr class="text-gray-200" />
+          <div class="flex justify-between items-center p-4">
+            <h4>1kg</h4>
+            <p>$20.00 per kg</p>
+          </div>
+        </div>
+      </section>
+      <!-- Sign up section end -->
     </main>
     <!-- Main Section End -->
 
@@ -439,7 +650,9 @@
           <button class="absolute button bg right-1">Subscrube</button>
         </div>
         <div class="flex justify-center md:justify-start gap-6">
-          <a href="https://www.facebook.com/profile.php?id=61554300737206" target="_blank"
+          <a
+            href="https://www.facebook.com/profile.php?id=61554300737206"
+            target="_blank"
             ><i
               class="fa-brands fa-facebook-f px-4 cursor-pointer hover:bg-[#89CE14] duration-500 p-3 border-[#89CE14] text-white text-2xl border rounded-full"
             ></i
@@ -459,4 +672,5 @@
     </footer>
     <!-- Footer -->
   </body>
+  <script src="../script/script.js"></script>
 </html>
