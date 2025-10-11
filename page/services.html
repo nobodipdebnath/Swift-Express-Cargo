@@ -35,23 +35,26 @@
       >
         <div>
           <a href="../index.html"
-            ><img class="h-[60px] cursor-pointer" src="../images/logo.png" alt=""
+            ><img
+              class="h-[60px] cursor-pointer"
+              src="../images/logo.png"
+              alt=""
           /></a>
         </div>
-        <div>
+        <div class="hidden lg:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
           >
-            <a class="hover:text-[#89CE14]" href="../index.html"><li>Home</li></a>
+            <a class="hover:text-[#89CE14]" href="../index.html"
+              ><li>Home</li></a
+            >
             <a class="hover:text-[#89CE14]" href="services.html"
               ><li>Services</li></a
             >
             <a class="hover:text-[#89CE14]" href="about.html"
               ><li>About us</li></a
             >
-            <a class="hover:text-[#89CE14]" href="reat.html"
-              ><li>Rates</li></a
-            >
+            <a class="hover:text-[#89CE14]" href="reat.html"><li>Rates</li></a>
             <a class="hover:text-[#89CE14]" href="cost.html"
               ><li>Cost Calculator</li></a
             >
@@ -60,9 +63,14 @@
             >
           </ul>
         </div>
-        <div class="flex justify-between gap-3">
-          <button class="button bg" onclick="my_modal_4.showModal()">Sign Up</button>
-            <dialog id="my_modal_4" class="modal">
+        <div class="md:hidden">
+          <i class="fa-solid text-white text-3xl fa-bars"></i>
+        </div>
+        <div class="flex justify-between gap-3 hidden md:block">
+          <button class="button bg" onclick="my_modal_4.showModal()">
+            Sign Up
+          </button>
+          <dialog id="my_modal_4" class="modal">
             <div class="modal-box">
               <form method="dialog">
                 <button
@@ -72,41 +80,82 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Sign Up</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">log in</span></a></p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Sign Up
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href=""
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >log in</span
+                    ></a
+                  >
+                </p>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Your Name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Your Email Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="email">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="email"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Mobile Number</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="number">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="number"
+                  />
                 </div>
                 <div>
                   <p class="text-lg text-[#7B7B7B] py-2">Home Address</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <p class="text-lg text-[#7B7B7B] py-2">Password</p>
-                    <p class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]">Hide</p>
+                    <p
+                      class="text-lg hover:underline py-2 cursor-pointer text-[#46C0A2]"
+                    >
+                      Hide
+                    </p>
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
+                      <input
+                        type="checkbox"
+                        name=""
+                        pattern="Remember me"
+                        id=""
+                      />
                       <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
                     </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                    <p
+                      class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                    >
+                      forgot your password
+                    </p>
                   </div>
                   <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
+                    <button
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
+                    >
+                      log in
+                    </button>
                   </div>
                 </div>
               </div>
@@ -128,29 +177,59 @@
                 </button>
               </form>
               <div>
-                <h1 class="text-center text-4xl font-bold text-[#333333]">Log in</h1>
-                <p class="text-xl text-[#606060] text-center">Don't have an account? <a href=""><span class="text-[#46C0A2] hover:underline">Sign up</span></a></p>
+                <h1 class="text-center text-4xl font-bold text-[#333333]">
+                  Log in
+                </h1>
+                <p class="text-xl text-[#606060] text-center">
+                  Don't have an account?
+                  <a href=""
+                    ><span class="text-[#46C0A2] hover:underline"
+                      >Sign up</span
+                    ></a
+                  >
+                </p>
                 <div>
-                  <p class="text-lg text-[#7B7B7B] py-2">Email address or user name</p>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <p class="text-lg text-[#7B7B7B] py-2">
+                    Email address or user name
+                  </p>
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <p class="text-lg text-[#7B7B7B] py-2">Password</p>
                     <p class="text-lg text-[#7B7B7B] py-2">Hide</p>
                   </div>
-                  <input class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1" type="text">
+                  <input
+                    class="w-full px-5 py-4 rounded-2xl outline-none border border-[#22bf98] rate1"
+                    type="text"
+                  />
                 </div>
                 <div>
                   <div class="flex justify-between items-center">
                     <div class="flex gap-2">
-                      <input type="checkbox" name="" pattern="Remember me" id="">
+                      <input
+                        type="checkbox"
+                        name=""
+                        pattern="Remember me"
+                        id=""
+                      />
                       <p class="text-lg text-[#7B7B7B] py-2">Remember me</p>
                     </div>
-                    <p class="text-lg  py-2 text-[#46C0A2] hover:underline cursor-pointer">forgot your password</p>
+                    <p
+                      class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                    >
+                      forgot your password
+                    </p>
                   </div>
                   <div class="flex justify-center items-center">
-                    <button class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer">log in</button>
+                    <button
+                      class="py-4 bg rounded-2xl text-white font-semibold text-xl w-full cursor-pointer"
+                    >
+                      log in
+                    </button>
                   </div>
                 </div>
               </div>
@@ -170,10 +249,13 @@
         </div>
       </div>
       <div class="absolute right-36 bottom-40">
-        <a href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question." target="_blank">
+        <a
+          href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question."
+          target="_blank"
+        >
           <i
-          class="fa-brands fa-whatsapp text-3xl rounded-full text-white p-4 border cursor-pointer hover:shadow-lg border-[#89CE14] bg-[#89CE14]"
-        ></i>
+            class="fa-brands fa-whatsapp text-3xl rounded-full text-white p-4 border cursor-pointer hover:shadow-lg border-[#89CE14] bg-[#89CE14]"
+          ></i>
         </a>
       </div>
     </header>
@@ -188,50 +270,73 @@
           Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />tempor
           orci tellus sollicitudin morbi. Duis
         </p>
-        <div class="grid grid-cols-3 gap-6 mt-8">
-          <div class="flex justify-center items-center flex-col card p-5 cursor-pointer">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <div
+            class="flex justify-center items-center flex-col card p-5 cursor-pointer"
+          >
             <img src="../images/track.svg" alt="" />
             <h1 class="text-[#606060] font-semibold text-xl py-2">
               US Shipping
             </h1>
-            <h2 class="text-base text-[#606060] mb-2 font-medium">Ship from door to door in Barbados</h2>
+            <h2 class="text-base text-[#606060] mb-2 font-medium">
+              Ship from door to door in Barbados
+            </h2>
             <p class="text-center text-[#606060] text-[14px]">
               Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
               blandit fermentum id. Sagittis eu egestas
             </p>
             <div class="pt-2">
-                <button class="bg-transparent w-[200px] button text hover-btn duration-500">Select</button>
+              <button
+                class="bg-transparent w-[200px] button text hover-btn duration-500"
+              >
+                Select
+              </button>
             </div>
           </div>
-          <div class="flex justify-center items-center flex-col card p-5 cursor-pointer">
+          <div
+            class="flex justify-center items-center flex-col card p-5 cursor-pointer"
+          >
             <img src="../images/group-location.svg" alt="" />
             <h1 class="text-[#606060] font-semibold text-xl py-2">
               Local Shipping
             </h1>
-            <h2 class="text-base text-[#606060] mb-2 font-medium">Ship from door to door in Barbados</h2>
+            <h2 class="text-base text-[#606060] mb-2 font-medium">
+              Ship from door to door in Barbados
+            </h2>
             <p class="text-center text-[#606060] text-[14px]">
               Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
               blandit fermentum id. Sagittis eu egestas
             </p>
             <div class="pt-2">
-                <button class="bg-transparent w-[200px] button text hover-btn duration-500">Select</button>
+              <button
+                class="bg-transparent w-[200px] button text hover-btn duration-500"
+              >
+                Select
+              </button>
             </div>
           </div>
-          <div class="flex justify-center items-center flex-col card p-5 cursor-pointer">
+          <div
+            class="flex justify-center items-center flex-col card p-5 cursor-pointer"
+          >
             <img src="../images/loaction.svg" alt="" />
             <h1 class="text-[#606060] font-semibold text-xl py-2">
               Regional Shipping
             </h1>
-            <h2 class="text-base text-[#606060] mb-2 font-medium">Ship from door to door in Barbados</h2>
+            <h2 class="text-base text-[#606060] mb-2 font-medium">
+              Ship from door to door in Barbados
+            </h2>
             <p class="text-center text-[#606060] text-[14px]">
               Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis
               blandit fermentum id. Sagittis eu egestas
             </p>
             <div class="pt-2">
-                <button class="bg-transparent w-[200px] button text hover-btn duration-500">Select</button>
+              <button
+                class="bg-transparent w-[200px] button text hover-btn duration-500"
+              >
+                Select
+              </button>
             </div>
           </div>
-
         </div>
       </section>
       <!-- Choose section end -->
@@ -246,17 +351,21 @@
           orci tellus sollicitudin morbi. Duis
         </p>
         <div class="relative">
-          <div class="flex items-center gap-2">
+          <div
+            class="flex flex-col md:flex-row items-center mt-10 md:mt-0 gap-2"
+          >
             <h1
               class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold"
             >
               1.
             </h1>
             <div>
-              <h1 class="text-3xl font-bold bg-text text-transparent">
+              <h1
+                class="text-3xl font-bold bg-text text-transparent text-center md:text-start"
+              >
                 Free Sign Up
               </h1>
-              <p class="text-lg text-[#606060]">
+              <p class="text-lg text-[#606060] text-center md:text-start">
                 Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
                 pretium <br />
                 phasellus adipiscing faucibus ut nec vel. Pellentesque ac
@@ -265,15 +374,19 @@
             </div>
           </div>
           <hr class="w-full text-[#C0C0C0] my-3" />
-          <div class="flex items-center gap-2">
+          <div class="flex flex-col md:flex-row items-center gap-2">
             <h1
-              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold"
+              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold text-center md:text-start"
             >
               2.
             </h1>
             <div>
-              <h1 class="text-3xl font-bold text-[#555555]">Shop online</h1>
-              <p class="text-lg text-[#606060]">
+              <h1
+                class="text-3xl font-bold text-[#555555] text-center md:text-start"
+              >
+                Shop online
+              </h1>
+              <p class="text-lg text-[#606060] text-center md:text-start">
                 Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
                 pretium <br />
                 phasellus adipiscing faucibus ut nec vel. Pellentesque ac
@@ -282,17 +395,19 @@
             </div>
           </div>
           <hr class="w-full text-[#C0C0C0] my-3" />
-          <div class="flex items-center gap-2">
+          <div class="flex flex-col md:flex-row items-center gap-2">
             <h1
-              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold"
+              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold text-center md:text-start"
             >
               3.
             </h1>
             <div>
-              <h1 class="text-3xl font-bold text-[#555555]">
+              <h1
+                class="text-3xl font-bold text-[#555555] text-center md:text-start"
+              >
                 Receive or pick up your packages
               </h1>
-              <p class="text-lg text-[#606060]">
+              <p class="text-lg text-[#606060] text-center md:text-start">
                 Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
                 pretium <br />
                 phasellus adipiscing faucibus ut nec vel. Pellentesque ac
@@ -301,15 +416,19 @@
             </div>
           </div>
           <hr class="w-full text-[#C0C0C0] my-3" />
-          <div class="flex items-center gap-2">
+          <div class="flex flex-col md:flex-row items-center gap-2">
             <h1
-              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold"
+              class="p-4 px-4.5 bg rounded-full text-4xl text-white font-bold text-center md:text-start"
             >
               4.
             </h1>
             <div>
-              <h1 class="text-3xl font-bold text-[#555555]">Tips for you!</h1>
-              <p class="text-lg text-[#606060]">
+              <h1
+                class="text-3xl font-bold text-[#555555] text-center md:text-start"
+              >
+                Tips for you!
+              </h1>
+              <p class="text-lg text-[#606060] text-center md:text-start">
                 Lorem ipsum dolor sit amet consectetur. Parturient mattis mi
                 pretium <br />
                 phasellus adipiscing faucibus ut nec vel. Pellentesque ac
@@ -319,7 +438,7 @@
           </div>
           <hr class="w-full text-[#C0C0C0] my-3" />
           <img
-            class="absolute top-15 right-16 rounded-lg -rotate-15"
+            class="absolute top-15 hidden lg:block right-16 rounded-lg -rotate-15"
             src="../images/work.png"
             alt=""
           />
@@ -336,7 +455,7 @@
           Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />tempor
           orci tellus sollicitudin morbi. Duis
         </p>
-        <div class="grid grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div
             tabindex="0"
             class="collapse collapse-plus bg-[#F1F6F2] border-base-300 border"
@@ -444,7 +563,9 @@
         <div
           class="py-[120px] bg rounded-3xl flex justify-between items-center flex-col"
         >
-          <h1 class="text-4xl font-bold text-white py-3">
+          <h1
+            class="text-4xl font-bold text-white py-3 text-center md:text-start"
+          >
             Hassle-Free Shipping, Every Time
           </h1>
           <p class="text-base text-white text-center">
@@ -455,46 +576,47 @@
           </p>
           <div class="pt-7">
             <button
-              class="py-3 px-8 cursor-pointer rounded-[38px] text-white text-lg font-medium last-btn" onclick="my_modal_4.showModal()"
+              class="py-3 px-8 cursor-pointer rounded-[38px] text-white text-lg font-medium last-btn"
+              onclick="my_modal_4.showModal()"
             >
               Sign Up For Free
             </button>
           </div>
           <div
-            class="h-[200px] w-[200px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[250px] w-[250px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[230px] w-[230px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[275px] w-[275px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[300px] w-[300px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[325px] w-[325px] border border-white rounded-full absolute left-20 -bottom-2"
+            class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute left-20 -bottom-2"
           ></div>
           <div
-            class="h-[200px] w-[200px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[200px] hidden md:block w-[200px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
           <div
-            class="h-[250px] w-[250px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[250px] hidden md:block w-[250px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
           <div
-            class="h-[230px] w-[230px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[230px] hidden md:block w-[230px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
           <div
-            class="h-[275px] w-[275px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[275px] hidden md:block w-[275px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
           <div
-            class="h-[300px] w-[300px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[300px] hidden md:block w-[300px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
           <div
-            class="h-[325px] w-[325px] border border-white rounded-full absolute right-20 -top-2"
+            class="h-[325px] hidden md:block w-[325px] border border-white rounded-full absolute right-20 -top-2"
           ></div>
         </div>
       </section>
@@ -502,10 +624,16 @@
     </main>
     <!-- Main Section End -->
     <!-- Footer -->
-    <footer class="px-[10%] py-[70px] last-btn mt-5 gap-8 flex justify-between">
+    <footer
+      class="px-[10%] py-[70px] last-btn mt-5 gap-8 flex flex-col lg:flex-row justify-between"
+    >
       <div>
-        <img class="h-[80px] w-auto" src="../images/logo.png" alt="" />
-        <p class="w-[350px] text-white pt-2 text-lg">
+        <div class="flex justify-center md:justify-start">
+          <img class="h-[80px] w-auto" src="../images/logo.png" alt="" />
+        </div>
+        <p
+          class="md:w-[350px] text-white pt-2 text-lg text-center md:text-start"
+        >
           Lorem ipsum dolor sit amet consectetur. Neque consequat tristique
           bibendum facilisis odio congue enim. Tempor justo proin faucibus
           praesent ac. Dui nunc sit aliquam eget adipiscing feugiat turpis. Ut
@@ -513,29 +641,71 @@
         </p>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">Support</h1>
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
+          Support
+        </h1>
         <ul class="flex mt-5 text-lg text-white justify-between flex-col gap-6">
-          <a href="#"><li>FAQ</li></a>
-          <a href="#"><li>return & Exchange</li></a>
-          <a href="reat.html"><li>Shipping</li></a>
-          <a href="benifit.html"><li>Brand</li></a>
-          <a href="#"><li>Review</li></a>
-          <a href="#"><li>Help</li></a>
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>FAQ</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>return & Exchange</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="reat.html"
+            ><li>Shipping</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="benifit.html"
+            ><li>Brand</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Review</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Help</li></a
+          >
         </ul>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">Company</h1>
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
+          Company
+        </h1>
         <ul class="flex mt-5 text-lg text-white justify-between flex-col gap-6">
-          <a href="services.html"><li>Services</li></a>
-          <a href="resticate.html"><li>Restricter Items</li></a>
-          <a href="#"><li>Terms & Conditions</li></a>
-          <a href="#"><li>Privacy Policy</li></a>
-          <a href="blog.html"><li>Blog</li></a>
-          <a href="contact.html"><li>Contact Us</li></a>
+          <a
+            class="text-center md:text-start hover:underline"
+            href="services.html"
+            ><li>Services</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="resticate.html"
+            ><li>Restricter Items</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Terms & Conditions</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Privacy Policy</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="blog.html"
+            ><li>Blog</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="contact.html"
+            ><li>Contact Us</li></a
+          >
         </ul>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
           Join a Newsletter
         </h1>
         <p class="mt-5 text-lg text-white">Your Email</p>
@@ -549,7 +719,7 @@
           />
           <button class="absolute button bg right-1">Subscrube</button>
         </div>
-        <div class="flex gap-6">
+        <div class="flex justify-center md:justify-start gap-6">
           <a href="#"
             ><i
               class="fa-brands fa-facebook-f px-4 cursor-pointer hover:bg-[#89CE14] duration-500 p-3 border-[#89CE14] text-white text-2xl border rounded-full"
