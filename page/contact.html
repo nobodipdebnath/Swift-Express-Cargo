@@ -42,9 +42,7 @@
             />
           </a>
         </div>
-
-        <!-- Desktop Menu -->
-        <div class="hidden lg:block">
+        <div class="hidden md:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
           >
@@ -68,17 +66,13 @@
             </li>
           </ul>
         </div>
-
-        <!-- Mobile Menu Icon -->
-        <div class="md:hidden">
-          <!-- Added id="menu-icon" to make the hamburger icon clickable -->
+        <div class="lg:hidden">
           <i
             id="menu-icon"
             class="fa-solid text-white text-3xl fa-bars cursor-pointer"
           ></i>
         </div>
 
-        <!-- Sign In/Sign Up Buttons for Desktop -->
         <div class="hidden md:flex justify-between gap-3">
           <button class="button bg" onclick="my_modal_4.showModal()">
             Sign Up
