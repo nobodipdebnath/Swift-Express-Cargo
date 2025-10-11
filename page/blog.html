@@ -38,7 +38,10 @@
             ><img class="h-[60px] cursor-pointer" src="../images/logo.png" alt=""
           /></a>
         </div>
-        <div>
+        <div class="md:hidden">
+          <i class="fa-solid text-white text-3xl fa-bars"></i>
+        </div>
+        <div class="hidden lg:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
           >
@@ -60,7 +63,7 @@
             >
           </ul>
         </div>
-        <div class="flex justify-between gap-3">
+        <div class="flex justify-between gap-3 hidden md:block">
           <button class="button bg" onclick="my_modal_4.showModal()">Sign Up</button>
             <dialog id="my_modal_4" class="modal">
             <div class="modal-box">
@@ -181,15 +184,15 @@
     <main>
       <!-- Blog section start -->
       <section class="px-[10%] py-[100px]">
-        <h1 class="text-4xl text-[#333333] font-bold">Our Blog</h1>
+        <h1 class="text-4xl text-[#333333] font-bold text-center md:text-start">Our Blog</h1>
         <div class="flex justify-between items-center">
-          <p class="text-xl text-[#606060] mt-2">
+          <p class="text-xl text-[#606060] mt-2 text-center md:text-start">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has <br />
             been the industry's standard dummy text ever since the 1500s
           </p>
         </div>
-        <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           <div class="shadow-lg rounded-xl relative">
             <img class="rounded-t-xl" src="../images/blog1.jpg" alt="" />
             <div class="p-5">
@@ -202,16 +205,16 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
               >
                 Read More
               </button></a>
             </div>
           </div>
-          <div class="shadow-lg rounded-xl relative">
+          <div class="shadow-lg rounded-xl relative mt-10 md:mt-0">
             <img class="rounded-t-xl" src="../images/blog2.jpg" alt="" />
             <div class="p-5">
               <h1 class="text-center text-[#555555] text-2xl font-bold py-3">
@@ -223,16 +226,16 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
             </div>
           </div>
-          <div class="shadow-lg rounded-xl relative">
+          <div class="shadow-lg rounded-xl relative mt-10 md:mt-0">
             <img class="rounded-t-xl" src="../images/blog3.jpg" alt="" />
             <div class="p-5">
               <h1 class="text-center text-[#555555] text-2xl font-bold py-3">
@@ -244,10 +247,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 hover:shadow-lg px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+                class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -265,10 +268,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+                class="py-3 md:px-10 px-5 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
               >
                 Read More
               </button></a>
@@ -286,10 +289,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -307,10 +310,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 hover:shadow-lg px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+                class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -328,10 +331,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
               >
                 Read More
               </button></a>
@@ -349,10 +352,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -370,10 +373,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 hover:shadow-lg px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+                class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -391,10 +394,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold hover:shadow-lg cursor-pointer"
               >
                 Read More
               </button></a>
@@ -412,10 +415,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
+                class="py-3 px-5 md:px-10 text-white bg rounded-lg text-xl hover:shadow-lg font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -433,10 +436,10 @@
               </p>
             </div>
             <div
-              class="flex justify-center items-center absolute -bottom-7 right-[33%]"
+              class="flex justify-center items-center absolute -bottom-7 right-[25%] md:right-[33%]"
             >
               <a href="blog-detales.html"><button
-                class="py-3 hover:shadow-lg px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
+                class="py-3 hover:shadow-lg px-5 md:px-10 text-white bg rounded-lg text-xl font-semibold cursor-pointer"
               >
                 Read More
               </button></a>
@@ -449,10 +452,16 @@
     <!-- Main Section End -->
 
     <!-- Footer -->
-    <footer class="px-[10%] py-[70px] last-btn mt-5 gap-8 flex justify-between">
+    <footer
+      class="px-[10%] py-[70px] last-btn mt-5 gap-8 flex flex-col lg:flex-row justify-between"
+    >
       <div>
-        <img class="h-[80px] w-auto" src="../images/logo.png" alt="" />
-        <p class="w-[350px] text-white pt-2 text-lg">
+        <div class="flex justify-center md:justify-start">
+          <img class="h-[80px] w-auto" src="../images/logo.png" alt="" />
+        </div>
+        <p
+          class="md:w-[350px] text-white pt-2 text-lg text-center md:text-start"
+        >
           Lorem ipsum dolor sit amet consectetur. Neque consequat tristique
           bibendum facilisis odio congue enim. Tempor justo proin faucibus
           praesent ac. Dui nunc sit aliquam eget adipiscing feugiat turpis. Ut
@@ -460,29 +469,71 @@
         </p>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">Support</h1>
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
+          Support
+        </h1>
         <ul class="flex mt-5 text-lg text-white justify-between flex-col gap-6">
-          <a href="#"><li>FAQ</li></a>
-          <a href="#"><li>return & Exchange</li></a>
-          <a href="reat.html"><li>Shipping</li></a>
-          <a href="benifit.html"><li>Brand</li></a>
-          <a href="#"><li>Review</li></a>
-          <a href="#"><li>Help</li></a>
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>FAQ</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>return & Exchange</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="reat.html"
+            ><li>Shipping</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="benifit.html"
+            ><li>Brand</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Review</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Help</li></a
+          >
         </ul>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">Company</h1>
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
+          Company
+        </h1>
         <ul class="flex mt-5 text-lg text-white justify-between flex-col gap-6">
-          <a href="services.html"><li>Services</li></a>
-          <a href="resticate.html"><li>Restricter Items</li></a>
-          <a href="#"><li>Terms & Conditions</li></a>
-          <a href="#"><li>Privacy Policy</li></a>
-          <a href="blog.html"><li>Blog</li></a>
-          <a href="contact.html"><li>Contact Us</li></a>
+          <a
+            class="text-center md:text-start hover:underline"
+            href="services.html"
+            ><li>Services</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="resticate.html"
+            ><li>Restricter Items</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Terms & Conditions</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="#"
+            ><li>Privacy Policy</li></a
+          >
+          <a class="text-center md:text-start hover:underline" href="blog.html"
+            ><li>Blog</li></a
+          >
+          <a
+            class="text-center md:text-start hover:underline"
+            href="contact.html"
+            ><li>Contact Us</li></a
+          >
         </ul>
       </div>
       <div>
-        <h1 class="text-2xl font-bold bg-text text-transparent">
+        <h1
+          class="text-2xl font-bold bg-text text-transparent text-center md:text-start"
+        >
           Join a Newsletter
         </h1>
         <p class="mt-5 text-lg text-white">Your Email</p>
@@ -496,7 +547,7 @@
           />
           <button class="absolute button bg right-1">Subscrube</button>
         </div>
-        <div class="flex gap-6">
+        <div class="flex justify-center md:justify-start gap-6">
           <a href="#"
             ><i
               class="fa-brands fa-facebook-f px-4 cursor-pointer hover:bg-[#89CE14] duration-500 p-3 border-[#89CE14] text-white text-2xl border rounded-full"
