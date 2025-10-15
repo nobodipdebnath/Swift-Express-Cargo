@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Cargo Service Ltd.</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon CDN -->
+    <script
+      src="https://kit.fontawesome.com/6cb37575c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Tailwind CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- colors -->
+  </head>
+  <body class="roboto relative bg-[#FDFDFD]">
+    <div class="mx-10 my-10 flex gap-8 h-auto">
+        <div class="w-[20%] dashboard-first p-7.5 h-[93vh]">
+            <div class="flex flex-col justify-between  gap-3">
+                <div class="flex flex-col gap-3">
+                    <div class="flex justify-center items-center">
+                    <a href="../index.html"><img class="h-[80px] w-auto" src="../images/logo.png" alt=""></a>
+                    </div>
+                    <button id="overview" class="bg w-full py-3 flex items-center px-5 rounded-lg gap-2 text-white cursor-pointer">
+                        <img class="h-5 " src="../images/overview.svg" alt="">
+                        <p>Overview</p>
+                    </button>
+                    <button id="packages" class="dashboard-btn text-[#7B7B7B] w-full py-3 flex items-center px-5 gap-2  cursor-pointer">
+                        <img class="h-5 " src="../images/packages.svg" alt="">
+                        <p>Packages</p>
+                    </button>
+                    <button id="create" class="dashboard-btn text-[#7B7B7B] w-full py-3 flex items-center px-5 gap-2  cursor-pointer">
+                        <img class="h-5 " src="../images/creat.svg" alt="">
+                        <p>Create Percale</p>
+                    </button>
+                    <button id="payment" class="dashboard-btn text-[#7B7B7B] w-full py-3 flex items-center px-5 gap-2  cursor-pointer">
+                        <img class="h-5 " src="../images/payment.svg" alt="">
+                        <p>Make Payment</p>
+                    </button>
+                    <button id="cost" class="dashboard-btn text-[#7B7B7B] w-full py-3 flex items-center px-5 gap-2  cursor-pointer">
+                        <img class="h-5 " src="../images/cost-calculator.svg" alt="">
+                        <p>Cost Calculator</p>
+                    </button>
+                    <button id="location" class="dashboard-btn text-[#7B7B7B] w-full py-3 flex items-center px-5 gap-2  cursor-pointer">
+                        <img class="h-5 " src="../images/location.svg" alt="">
+                        <p>My Address</p>
+                    </button>
+                </div>
+                <div class="mt-[115%]">
+                    <button id="sign-out" class="bg-[#EE1D5208] text-[#EE1D52CC] w-full py-3 flex items-center px-5 gap-2 rounded-lg  cursor-pointer">
+                        <img class="h-5" src="../images/signout.svg" alt="">
+                        <p>Sign Out</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80%]" id="overview-section">
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">Welcome to Swift Express Cargo, ABC-123</h1>
+                        <p class="text-base text-[#7B7B7B]">Welcome to Swift Express Cargo</p>
+                    </div>
+                    <img src="../images/hand.svg" alt="">
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="grid grid-cols-4 gap-8 py-7">
+                <div class="bg-[#6DA0151A] shadow1 p-8 rounded-2xl relative cursor-pointer">
+                    <img src="../images/deshboard-card-1.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">In transit to USA</p>
+                    <p class="p-1 px-2 text-[#3ecfaa1a] bg-white rounded-full absolute top-1 right-1">02</p>
+                </div>
+                <div class="bg-[#46C0A21A] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-2.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">In USA</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">03</p>
+                </div>
+                <div class="bg-[#FFF6ED] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-3.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">In transit to New york</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">00</p>
+                </div>
+                <div class="bg-[#F0FDF4] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-4.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">Washington</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">03</p>
+                </div>
+                <div class="bg-[#FEFBE8] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-5.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">Out for delivery</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">00</p>
+                </div>
+                <div class="bg-[#EFF6FF] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-6.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">Ready for pickup</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">03</p>
+                </div>
+                <div class="bg-[#F1F6E8] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-7.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">Total delivered</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">00</p>
+                </div>
+                <div class="bg-[#FEF2F2] shadow1 rounded-2xl p-8 relative cursor-pointer">
+                    <img src="../images/dashboard-card-8.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg py-2">Action required</p>
+                    <p class="p-1 px-2 text-[#41d0ac1a] bg-white rounded-full absolute top-1 right-1">03</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5.5 shadow1">
+                <div class="flex justify-between items-center">
+                    <p class="text-[#5D5D5D] font-semibold text-2xl">Your Packages</p>
+                    <button id="" class="text-base bg-text flex items-center gap-2 cursor-pointer ">
+                        <p>See more</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center items-center flex-col gap-1 py-16">
+                    <img class="p-3 bg-[#46C0A21A] rounded-full" src="../images/dashboard-packeg.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg font-light">You have no packages at this moment</p>
+                </div>
+            </div>
+            <div class="grid py-7 grid-cols-2 gap-7">
+                <div class="bg-white rounded-2xl p-5.5 shadow1">
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#5D5D5D] font-semibold text-2xl">Pending Payments (0)</p>
+                        <button id="" class="text-base bg-text flex items-center gap-2 cursor-pointer ">
+                            <p>See more</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-center items-center flex-col gap-1 py-16">
+                        <img class="p-3 bg-[#46C0A21A] rounded-full" src="../images/pament.svg" alt="">
+                        <p class="text-[#5D5D5D] text-lg font-light">You have no packages at this moment</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-5.5 shadow1">
+                    <div class="flex justify-between items-center">
+                        <p class="text-[#5D5D5D] font-semibold text-2xl">Recently Delivered (0)</p>
+                        <button class="text-base bg-text flex items-center gap-2 cursor-pointer ">
+                            <p>See more</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-center items-center flex-col gap-1 py-16">
+                        <img class="p-3 bg-[#46C0A21A] rounded-full" src="../images/delevary.svg" alt="">
+                        <p class="text-[#5D5D5D] text-lg font-light">You have no packages at this moment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden w-[80%]" id="packages-section" >
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">My Packages</h1>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow1 rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="flex justify-between items-center py-7">
+                <div>
+                    <p class="text-[#7B7B7B] text-base">Have a package heading to Miami now? Prealert it here and receive it faster.</p>
+                    <div class="flex gap-4 py-4">
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">in counter</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">In transit to country</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">Out for delivery</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">Out for delivery</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">In transit to New york</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">Ready for pickup</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">Delivered</p>
+                        <p class="py-1.5 px-4 bg-white rounded-3xl  text-[#7B7B7B] border border-[#E8E8E8] cursor-pointer">Action required</p>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="relative">
+                            <input class="px-5 py-4 w-[100px] dashboard-input outline-none" type="text" placeholder="All" name="" id="">
+                            <i class="fa-solid fa-chevron-down absolute top-5 right-5 text-[#6da015] cursor-pointer"></i>
+                        </div>
+                        <div class="relative">
+                            <input class="px-5 py-4 w-[250px] dashboard-input outline-none" type="text" placeholder="Search packages" name="" id="">
+                            <i class="fa-solid fa-magnifying-glass absolute top-5 right-5 text-[#6da015] cursor-pointer"></i>
+                        </div>
+                        <div class="relative">
+                            <input class="px-5 py-4 w-[150px] dashboard-input outline-none" type="text" placeholder="Clear filters" name="" id="">
+                            <i class="fa-solid fa-xmark absolute top-5 right-5 text-[#6da015] cursor-pointer"></i>
+                        </div>
+                        <div class="relative">
+                            <input class="px-5 py-4 w-[120px] dashboard-input outline-none" type="text" placeholder="Reload" name="" id="">
+                            <i class="fa-solid fa-rotate absolute top-5 right-5 text-[#6da015] cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="bg-[#0B2A7733] px-5 py-3 rounded-lg flex justify-center items-center flex-col text-[#585858]">
+                        <p>0</p>
+                        <p>In transit</p>
+                    </div>
+                    <div class="bg-[#6DA01533] px-5 py-3 rounded-lg flex justify-center items-center flex-col text-[#585858]">
+                        <p>0</p>
+                        <p>pick up</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl p-5.5 shadow1">
+                <div class="flex justify-center items-center flex-col gap-1 py-16">
+                    <img class="p-3 bg-[#46C0A21A] rounded-full" src="../images/dashboard-packeg.svg" alt="">
+                    <h4 class="text-[#5D5D5D] text-lg ">There are no packages to display</h4>
+                    <p class="text-[#5D5D5D] text-lg font-light">Lorem ipsum dolor sit amet consectetur. Orci tempor nisi in quis ornare at.</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80%] hidden" id="create-section">
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">Create Percale</h1>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div>  
+            <p class="text-[#7B7B7B] text-base py-3">Complete prealert so we know your package is on its way and we can process it as fast as possible.</p> 
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Tracking Number *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="Enter Tracking Number" name="" id="">
+                </div>
+                <div>
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Courier Company *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="Select Company" name="" id="">
+                </div>
+                <div class="relative">
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Store where you bought this package *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="Store" name="" id="">
+                    <i class="fa-solid fa-magnifying-glass text-2xl absolute top-17 cursor-pointer text-[#5D5D5D] right-8"></i>
+                </div>
+                <div>
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Package value (USD) *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="00.00" name="" id="">
+                </div>
+                <div class="relative">
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Consignee *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="Consignee" name="" id="">
+                    <i class="fa-solid fa-magnifying-glass text-2xl absolute top-17 cursor-pointer text-[#5D5D5D] right-8"></i>
+                </div>
+                <div>
+                    <p class="text-[#5D5D5D] text-xl font-light py-2">Describe your package *</p>
+                    <input type="text" class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7" placeholder="Describe" name="" id="">
+                </div>
+            </div>
+            <p class="text-[#5D5D5D] text-xl py-2 mt-6">Add Invoice</p>
+            <p class="text-[#5D5D5D] text-base">Lorem ipsum dolor sit amet consectetur. A tempus aliquam non aliquam purus semper. Maecenas egestas <br> ornare nisi at arcu leo aliquet ut. Nunc.</p>
+            <div class="bg-[#0B2A7705] px-8 py-9 mt-8 create-btn-section rounded-2xl">
+                <p class="text-center text-[Half Black] text-base font-light">Upload Your Invoice Picture or Paste <br>Invoice Page Text</p>
+                <div class="flex justify-center items-center gap-5 mt-4">
+                    <button class="flex items-center justify-center gap-2 rate1 py-4 px-5 rounded-lg cursor-pointer">
+                        <img src="../images/create-btn-1.svg" alt="">
+                        <p class="bg-text">Add image or document</p>
+                    </button>
+                    <button class="flex items-center justify-center gap-2 rate1 py-4 px-5 rounded-lg cursor-pointer">
+                        <img src="../images/create-btn-2.svg" alt="">
+                        <p class="bg-text">Add image or document</p>
+                    </button>
+                </div>
+            </div>
+            <div class="flex items-center gap-1 mt-4">
+                <input type="checkbox" name="" id="">
+                <p class="text-[#5D5D5D] text-base font-light">I confirm that I've reviewed the list of <span class="text-[#0B2A77] hover:underline cursor-pointer">restricted and special-handling items,</span> which includes products like cosmetics, food, adult toys, guns, and more.</p>
+            </div>
+            <ul class="mt-2 ml-6 flex flex-col gap-2 text-[#5D5D5D] font-light text-base list-disc">
+                <li>Required fields</li>
+                <li>By pre-alerting you accept our terms and conditions.</li>
+                <li>The amount you declare will be used in case of any claim.</li>
+                <li>The invoice is for the importation process.</li>
+                <li>Please note that your package may have a change in its tracking number. Make sure to create the pre-alert using the most recent tracking number.</li>
+            </ul>
+            <div class="py-5 flex gap-6 items-center">
+                <button class="text-xl bg-text px-10 py-3.5 cursor-pointer  rounded-[38px] border-2 border-[#6DA015]">Cancel</button>
+                <button class="text-xl bg text-white px-10 py-3.5 cursor-pointer  rounded-[38px] border-2 border-[#6DA015]">Create</button>
+            </div>
+        </div>
+        <div class="w-[80%] hidden " id="payment-section">
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">Payment</h1>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div> 
+            <div class="flex gap-8 pt-8 pb-2 text-2xl text-[#5D5D5D]">
+                <h1 class="bg-text cursor-pointer">Pending</h1>
+                <h1 class="cursor-pointer">History</h1>
+                <h1 class="cursor-pointer">Statement</h1>
+            </div> 
+            <hr class="text-[#DFDFDF]">
+            <div class="my-8 px-7 py-11 shadow1 rounded-xl">
+                <p class="text-[#737373] text-[22px]">Total Due Amount</p>
+                <h1 class="py-3 text-[#565656] text-[42px]">$ 0.00 USD</h1>
+                <p class="text-base text-[#737373]">0 Shipments</p>
+            </div>
+            <div class="bg-white rounded-2xl p-5.5 shadow1">
+                <div class="flex justify-between items-center">
+                    <p class="text-[#5D5D5D] font-semibold text-[22px]">0 Selected</p>
+                    <button class="text-base bg-text flex items-center gap-2 cursor-pointer ">
+                        <p>Select all</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="flex justify-center items-center flex-col gap-1 py-16">
+                    <img class="p-3 bg-[#46C0A21A] rounded-full" src="../images/payment-sectioon.svg" alt="">
+                    <p class="text-[#5D5D5D] text-lg font-light">You have no pending payments</p>
+                </div>
+            </div>            
+        </div>
+        <div class="w-[80%] hidden" id="cost-calculator-section">
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">Cost Calculator</h1>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div> 
+            <div class=" px-[30px] py-9 shadow1 my-8 rounded-xl">
+                <p class="text-2xl font-medium text-[#717171] mb-8">Check Your Shipping Price</p>
+                <form action="">
+                    <div class="relative">
+                        <p class="text-[#7B7B7B] text-base pb-3">Select Product</p>
+                        <input type="text" class="w-full p-5 dashboard-input outline-none" name="" placeholder="Search for products..." id="">
+                        <i class="fa-solid fa-magnifying-glass absolute top-14 text-[#46C0A2] right-8 text-2xl"></i>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 mt-4">
+                        <div class="">
+                            <p class="text-[#7B7B7B] text-base pb-3">Total Weight</p>
+                            <input type="text" class="w-full p-5 dashboard-input outline-none" name="" placeholder="0.00" id="">
+                        </div>
+                        <div class="relative">
+                            <p class="text-[#7B7B7B] text-base pb-3">Unit</p>
+                            <input type="text" class="w-full p-5 dashboard-input outline-none" name="" placeholder="Kg" id="">
+                            <i class="fa-solid fa-chevron-down absolute top-14 text-[#46C0A2] right-8 text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-[#7B7B7B] text-base pb-3">Total Product Value in USD (incl. shipping & tax)</p>
+                        <input type="text" class="w-full p-5 dashboard-input outline-none" name="" placeholder="Total product value in USD" id="">
+                    </div>    
+                    <div class="mt-8">
+                        <button class="py-3.5 px-20 bg rounded-[38px] text-white text-xl font-medium cursor-pointer">CALCULATE</button>
+                    </div>                
+                </form>                
+            </div>
+
+        </div>
+        <div class="w-[80%] hidden" id="location-section">
+            <div class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-6">
+                <div class="flex items-center gap-2">
+                    <div>
+                        <h1 class="text-4xl text-[#333333] font-semibold py-2">Your Address</h1>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn" src="../images/notification.svg" alt="">
+                    <img class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full" src="../images/profile.jpg" alt="">
+                </div>
+
+            </div> 
+            <div class="px-[30px] py-9 rounded-xl my-8 shadow1 ">
+                <p class="text-[#717171] text-2xl font-medium mb-8">Your Address</p>
+                <div class="flex justify-between items-center mb-8">
+                    <p class="text-[#7B7B7B] text-xl">Full Name</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">XYZ POS-135748</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mb-8">
+                    <p class="text-[#7B7B7B] text-xl">Address Line</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">1 Aeropost Way</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mb-8">
+                    <p class="text-[#7B7B7B] text-xl">City</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">Dhaka</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mb-8">
+                    <p class="text-[#7B7B7B] text-xl">State</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">Dhaka</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mb-8">
+                    <p class="text-[#7B7B7B] text-xl">ZIP Code</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">5200</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p class="text-[#7B7B7B] text-xl">Phone number</p>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#6F6E6E] font-semibold">+880 13122 03474</p>
+                        <img class="cursor-pointer" src="../images/copy.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="py-9 px-8 bg-[#0B2A7705] rounded-xl text-base text-[#5D5D5D]">
+                <p>Lorem ipsum dolor sit amet consectetur. Quis tristique amet massa proin tempor iaculis eu. Adipiscing vel eget blandit molestie tempus quam posuere purus sapien. Feugiat massa nulla a pretium. Scelerisque sem odio pharetra sem. Lorem ipsum dolor sit amet consectetur. Quis tristique amet massa proin tempor iaculis eu. Adipiscing vel eget blandit molestie tempus quam posuere purus sapien. Feugiat massa nulla a pretium. Scelerisque sem odio pharetra sem. </p>
+                <p class="mt-8">If you have questions about how to do it, you can check our step-by-step guide for each store by <span class="text-[#73d5bd] cursor-pointer hover:underline">clicking here.</span></p>
+            </div>
+            <div class="px-8 py-9 bg-[#0B2A7705] mt-8 rounded-xl " >
+                <div class="flex justify-center items-center gap-1 flex-col">
+                    <p class="text-base text-[#5D5D5D] font-bold">Need specific help?</p>
+                    <p class="text-base text-[#5D5D5D] font-light">Our support team is available on WhatsApp to assist you.</p>
+                    <button class="flex gap-2 items-center px-10 py-4 border border-none cursor-pointer rounded-[38px] mt-3 location-btn">
+                        <i class="fa-brands fa-whatsapp bg-text text-2xl"></i>
+                        <p class="bg-text">Contact via WhatsApp</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="../script/deshboard.js"></script>
+  <script src="script/script.js"></script>
+  <script src="script/login.js"></script>
+
+</html>
