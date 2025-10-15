@@ -6,9 +6,10 @@ const sections = [
   "payment-section",
   "cost-calculator-section",
   "location-section",
+  "notification-section",
 ];
 
-const buttons = ["overview", "packages", "create", "payment", "cost", "location"];
+const buttons = ["overview", "packages", "create", "payment", "cost", "location", "notification",];
 
 function showSection(activeBtnId, activeSectionId) {
   sections.forEach((sec) => document.getElementById(sec).classList.add("hidden"));
@@ -34,4 +35,6 @@ buttons.forEach((btn) => {
     showSection(btn, sectionId);
   });
 });
+
+
 
