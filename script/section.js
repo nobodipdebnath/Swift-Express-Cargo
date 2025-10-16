@@ -3,6 +3,9 @@ document.getElementById('history').addEventListener('click', function(event){
     document.getElementById('history-section').classList.remove('hidden');
     document.getElementById('pending-section').classList.add('hidden');
     document.getElementById('statement-section').classList.add('hidden');
+    document.getElementById('history').classList.add('bg-text');
+    document.getElementById('pending').classList.remove('bg-text');
+    document.getElementById('statement').classList.remove('bg-text');
 
 })
 document.getElementById('pending').addEventListener('click', function(event){
@@ -10,12 +13,18 @@ document.getElementById('pending').addEventListener('click', function(event){
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById('pending-section').classList.remove('hidden');
     document.getElementById('statement-section').classList.add('hidden');
+    document.getElementById('history').classList.remove('bg-text');
+    document.getElementById('pending').classList.add('bg-text');
+    document.getElementById('statement').classList.remove('bg-text');    
 })
 document.getElementById('statement').addEventListener('click', function(event){
     event.preventDefault();
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById('pending-section').classList.add('hidden');
     document.getElementById('statement-section').classList.remove('hidden');
+    document.getElementById('history').classList.remove('bg-text');
+    document.getElementById('pending').classList.remove('bg-text');
+    document.getElementById('statement').classList.add('bg-text');
 })
 
 

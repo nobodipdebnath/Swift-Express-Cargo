@@ -7,9 +7,10 @@ const sections = [
   "cost-calculator-section",
   "location-section",
   "notification-section",
+  "account-section"
 ];
 
-const buttons = ["overview", "packages", "create", "payment", "cost", "location", "notification",];
+const buttons = ["overview", "packages", "create", "payment", "cost", "location", "notification","account"];
 
 function showSection(activeBtnId, activeSectionId) {
   sections.forEach((sec) => document.getElementById(sec).classList.add("hidden"));
@@ -19,7 +20,7 @@ function showSection(activeBtnId, activeSectionId) {
   buttons.forEach((btn) => {
     const el = document.getElementById(btn);
     el.classList.remove("bg", "text-white");
-    el.classList.add("text-[#7B7B7B]", "dashboard-btn", "rounded-lg");
+    el.classList.add("text-[#7B7B7B]", "dashboard-btn",);
   });
 
   const activeBtn = document.getElementById(activeBtnId);
@@ -36,5 +37,22 @@ buttons.forEach((btn) => {
   });
 });
 
+document.getElementById('delivery').addEventListener('click', function(){
 
+  document.getElementById('delivery').classList.add('rate1')
+  document.getElementById('store').classList.remove('rate1')
+  document.getElementById('locker').classList.remove('rate1')
+})
+document.getElementById('store').addEventListener('click', function(){
+
+  document.getElementById('store').classList.add('rate1')
+  document.getElementById('delivery').classList.remove('rate1')
+  document.getElementById('locker').classList.remove('rate1')
+})
+document.getElementById('locker').addEventListener('click', function(){
+  
+  document.getElementById('locker').classList.add('rate1')
+  document.getElementById('delivery').classList.remove('rate1')
+  document.getElementById('store').classList.remove('rate1')
+})
 
