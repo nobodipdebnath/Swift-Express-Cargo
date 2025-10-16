@@ -81,14 +81,25 @@
             </button>
           </div>
           <div class="mt-[90%]">
-            <button onclick="my_modal_5.showModal()"
+            <button onclick="my_modal_1.showModal()"
               id="sign-out"
               class="bg-[#EE1D5208] text-[#EE1D52CC] w-full py-3 flex items-center px-5 gap-2 rounded-lg cursor-pointer"
             >
               <img class="h-5" src="../images/signout.svg" alt="" />
               <p>Sign Out</p>
             </button>
-
+            <dialog id="my_modal_1" class="modal">
+              <div class=" bg-[#FFFFFF] px-9 py-5 rounded-2xl">
+                <h3 class="text-center text-[#333333] font-semibold text-[32px] mb-7">Sign Out</h3>
+                <p class="text-center text-lg text-gray-500">Do you want to log out?</p>
+                <div class="flex items-center justify-between gap-4 mt-5">
+                  <form method="dialog">
+                    <button class="py-4 px-10 border border-gray-300 cursor-pointer text-base font-bold text-[#333333] rounded-[38px] ">Cancel</button>
+                  </form>
+                  <button id="log-out" class=" py-4 px-10 border bg text-white text-base font-bold rounded-[38px] cursor-pointer">Log Out</button>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
@@ -690,43 +701,43 @@
             <div class="flex justify-between items-center mb-8">
               <p class="text-[#7B7B7B] text-xl">Full Name</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">XYZ POS-135748</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text1">XYZ POS-135748</p>
+                <img class="cursor-pointer copy-btn" data-target="text1" src="../images/copy.svg" alt="" />
               </div>
             </div>
             <div class="flex justify-between items-center mb-8">
               <p class="text-[#7B7B7B] text-xl">Address Line</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">1 Aeropost Way</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text2">1 Aeropost Way</p>
+                <img class="cursor-pointer copy-btn" data-target="text2" src="../images/copy.svg" alt="" />
               </div>
             </div>
             <div class="flex justify-between items-center mb-8">
               <p class="text-[#7B7B7B] text-xl">City</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">Dhaka</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text3">Dhaka</p>
+                <img class="cursor-pointer copy-btn" data-target="text3" src="../images/copy.svg" alt="" />
               </div>
             </div>
             <div class="flex justify-between items-center mb-8">
               <p class="text-[#7B7B7B] text-xl">State</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">Dhaka</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text-4">Dhaka</p>
+                <img class="cursor-pointer copy-btn" data-target="text-4" src="../images/copy.svg" alt="" />
               </div>
             </div>
             <div class="flex justify-between items-center mb-8">
               <p class="text-[#7B7B7B] text-xl">ZIP Code</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">5200</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text-5">5200</p>
+                <img class="cursor-pointer copy-btn" data-target="text-5" src="../images/copy.svg" alt="" />
               </div>
             </div>
             <div class="flex justify-between items-center">
               <p class="text-[#7B7B7B] text-xl">Phone number</p>
               <div class="flex items-center gap-2">
-                <p class="text-[#6F6E6E] font-semibold">+880 13122 03474</p>
-                <img class="cursor-pointer" src="../images/copy.svg" alt="" />
+                <p class="text-[#6F6E6E] font-semibold copy-text" id="text-6">+880 13122 03474</p>
+                <img class="cursor-pointer copy-btn" data-target="text-6" src="../images/copy.svg" alt="" />
               </div>
             </div>
           </div>
@@ -759,12 +770,12 @@
               <p class="text-base text-[#5D5D5D] font-light">
                 Our support team is available on WhatsApp to assist you.
               </p>
-              <button
-                class="flex gap-2 items-center px-10 py-4 border border-none cursor-pointer rounded-[38px] mt-3 location-btn"
-              >
-                <i class="fa-brands fa-whatsapp bg-text text-2xl"></i>
-                <p class="bg-text">Contact via WhatsApp</p>
-              </button>
+              <a href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question." target="_blank">
+                  <button class="flex gap-2 items-center px-10 py-4 border border-none cursor-pointer rounded-[38px] mt-3 location-btn">
+                    <i class="fa-brands fa-whatsapp bg-text text-2xl"></i>
+                  <p class="bg-text">Contact via WhatsApp</p>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1061,4 +1072,5 @@
   <script src="../script/deshboard.js"></script>
   <script src="../script/script.js"></script>
   <script src="../script/login.js"></script>
+  <script src="../script/logout.js"></script>
 </html>

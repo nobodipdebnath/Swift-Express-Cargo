@@ -56,3 +56,22 @@ document.getElementById('locker').addEventListener('click', function(){
   document.getElementById('store').classList.remove('rate1')
 })
 
+  // Select all copy buttons
+  const copyButtons = document.querySelectorAll('.copy-btn');
+
+  copyButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const textEl = document.getElementById(targetId);
+
+      if (textEl) {
+        navigator.clipboard.writeText(textEl.textContent)
+          .then(() => {
+            alert(`Copied: "${textEl.textContent}" ✅`);
+          })
+          .catch(err => {
+            console.error('Failed to copy: ', err);
+          });
+      }
+    });
+  });
