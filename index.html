@@ -88,9 +88,9 @@
       </nav>
       <dialog id="my_modal_3" class="modal">
         <div class="modal-box">
-          <form method="dialog">
+          <form method="dialog" class="relative">
             <button
-              class="text-2xl font-bold absolute right-4 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 top-2"
+              class=" text-2xl font-bold absolute -right-2 p-2 px-3.5 cursor-pointer border-transparent border rounded-full hover:border-[#46C0A2] hover:text-white hover-btn duration-500 -top-3"
             >
               ✕
             </button>
@@ -141,17 +141,17 @@
                       class="h-4 w-4"
                       required
                     />
-                    <label for="remember-me" class="text-lg text-[#7B7B7B]"
+                    <label for="remember-me" class="md:text-lg text-sm text-[#7B7B7B]"
                       >Remember me</label
                     >
                   </div>
                   <a
                     href="#"
-                    class="text-lg py-2 text-[#46C0A2] hover:underline cursor-pointer"
+                    class="md:text-lg hidden md:block text-sm py-2 text-[#46C0A2] hover:underline cursor-pointer"
                     >Forgot your password?</a
                   >
                 </div>
-                <div class="flex justify-center items-center mt-6">
+                <div class="flex justify-center items-center mt-3 md:mt-6">
                   <button
                     id="login"
                     type="submit"

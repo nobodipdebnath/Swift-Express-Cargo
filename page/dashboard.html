@@ -28,8 +28,8 @@
     <!-- colors -->
   </head>
   <body class="roboto relative bg-[#FDFDFD]">
-    <div class="mx-10 my-10 flex gap-8 h-auto">
-      <div class="w-[20%] dashboard-first p-7.5 h-[100vh]">
+    <div class="md:mx-10 mx-5 my-10 flex gap-8 h-auto">
+      <div class="w-[20%]  dashboard-first p-7.5 h-[100vh]">
         <div class="flex justify-between flex-col gap-3">
           <div class="flex flex-col gap-3">
             <div class="flex justify-center items-center">
@@ -103,13 +103,13 @@
           </div>
         </div>
       </div>
-      <div class="w-[80%]">
+      <div class="md:w-[80%] w-full">
         <div
-          class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-4"
+          class="flex md:justify-between items-center bg-[#fff] rounded-2xl shadow1 p-4"
         >
           <div class="flex items-center gap-2">
             <div>
-              <h1 id="section-text" class="text-4xl text-[#333333] font-semibold py-2">
+              <h1 id="section-text" class="md:text-4xl hidden md:block text-2xl text-[#333333] font-semibold py-2">
                 Welcome to Swift Express Cargo, ABC-123
               </h1>
               <p id="section-title" class="text-base text-[#7B7B7B]">
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="" id="overview-section">
-          <div class="grid grid-cols-4 gap-8 py-7">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-7">
             <div
               class="bg-[#6DA0151A] shadow1 p-8 rounded-2xl relative cursor-pointer"
             >
@@ -226,10 +226,10 @@
           </div>
           <div class="bg-white rounded-2xl p-5.5 shadow1">
             <div class="flex justify-between items-center">
-              <p class="text-[#5D5D5D] font-semibold text-2xl">Your Packages</p>
+              <p class="text-[#5D5D5D] font-semibold md:text-2xl text-xl">Your Packages</p>
               <button
                 id=""
-                class="text-base bg-text flex items-center gap-2 cursor-pointer"
+                class="md:text-base text-sm bg-text flex items-center gap-2 cursor-pointer"
               >
                 <p>See more</p>
                 <i class="fa-solid fa-chevron-right"></i>
@@ -241,20 +241,20 @@
                 src="../images/dashboard-packeg.svg"
                 alt=""
               />
-              <p class="text-[#5D5D5D] text-lg font-light">
+              <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
                 You have no packages at this moment
               </p>
             </div>
           </div>
-          <div class="grid py-7 grid-cols-2 gap-7">
+          <div class="grid py-7 grid-cols-1 lg:grid-cols-2 gap-7">
             <div class="bg-white rounded-2xl p-5.5 shadow1">
               <div class="flex justify-between items-center">
-                <p class="text-[#5D5D5D] font-semibold text-2xl">
+                <p class="text-[#5D5D5D] font-semibold text-xl md:text-2xl">
                   Pending Payments (0)
                 </p>
                 <button
                   id=""
-                  class="text-base bg-text flex items-center gap-2 cursor-pointer"
+                  class=" text-sm md:text-base bg-text flex items-center gap-2 cursor-pointer"
                 >
                   <p>See more</p>
                   <i class="fa-solid fa-chevron-right"></i>
@@ -268,18 +268,18 @@
                   src="../images/pament.svg"
                   alt=""
                 />
-                <p class="text-[#5D5D5D] text-lg font-light">
+                <p class="text-[#5D5D5D] text-center md:text-start text-lg font-light">
                   You have no packages at this moment
                 </p>
               </div>
             </div>
             <div class="bg-white rounded-2xl p-5.5 shadow1">
               <div class="flex justify-between items-center">
-                <p class="text-[#5D5D5D] font-semibold text-2xl">
+                <p class="text-[#5D5D5D] font-semibold text-xl md:text-2xl">
                   Recently Delivered (0)
                 </p>
                 <button
-                  class="text-base bg-text flex items-center gap-2 cursor-pointer"
+                  class="md:text-base text-sm bg-text flex items-center gap-2 cursor-pointer"
                 >
                   <p>See more</p>
                   <i class="fa-solid fa-chevron-right"></i>
@@ -293,7 +293,7 @@
                   src="../images/delevary.svg"
                   alt=""
                 />
-                <p class="text-[#5D5D5D] text-lg font-light">
+                <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
                   You have no packages at this moment
                 </p>
               </div>
