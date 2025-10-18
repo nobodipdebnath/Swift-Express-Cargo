@@ -30,20 +30,23 @@
   <body class="roboto bg-[#FDFDFD]">
     <div class="md:mx-10 nav-container mx-5 my-5 md:my-10 flex gap-8 h-auto">
       <!-- Left side -->
-      <div id="all-links" class="w-[20%] lg:block dashboard-first p-7.5 h-[90vh] lg:h-[100vh] -left-[100%] duration-500 nav-links">
+      <div
+        id="all-links"
+        class="w-[20%] lg:block dashboard-first p-7.5 h-[90vh] lg:h-[100vh] -left-[100%] duration-500 nav-links"
+      >
         <div class="flex lg:justify-between flex-col gap-3">
           <div class="flex flex-col gap-3">
             <div id="hide-menu" class="md:hidden relative">
-              <i  class="fa-solid fa-xmark absolute left-1 text-3xl top-1"></i>
+              <i class="fa-solid fa-xmark absolute left-1 text-3xl top-1"></i>
             </div>
             <div class="flex justify-center items-center">
               <a href=""
                 ><img class="h-[80px] w-auto" src="../images/logo.png" alt=""
               /></a>
             </div>
-            <button 
+            <button
               id="overview"
-              class="bg w-full  py-3 flex items-center px-5 rounded-lg gap-2 text-white cursor-pointer"
+              class="bg w-full py-3 flex items-center px-5 rounded-lg gap-2 text-white cursor-pointer"
             >
               <img class="h-5" src="../images/overview.svg" alt="" />
               <p>Overview</p>
@@ -85,7 +88,8 @@
             </button>
           </div>
           <div class="lg:mt-[90%] mt-10">
-            <button onclick="my_modal_1.showModal()"
+            <button
+              onclick="my_modal_1.showModal()"
               id="sign-out"
               class="bg-[#EE1D5208] text-[#EE1D52CC] w-full py-3 flex items-center px-5 gap-2 rounded-lg cursor-pointer"
             >
@@ -93,14 +97,31 @@
               <p>Sign Out</p>
             </button>
             <dialog id="my_modal_1" class="modal">
-              <div class=" bg-[#FFFFFF] px-3 md:px-9 py-5 rounded-2xl">
-                <h3 class="text-center text-[#333333] font-semibold text-[32px] mb-4 md:mb-7">Sign Out</h3>
-                <p class="text-center text-lg text-gray-500">Do you want to log out?</p>
-                <div class="flex items-center justify-between gap-2 md:gap-4 mt-5">
+              <div class="bg-[#FFFFFF] px-3 md:px-9 py-5 rounded-2xl">
+                <h3
+                  class="text-center text-[#333333] font-semibold text-[32px] mb-4 md:mb-7"
+                >
+                  Sign Out
+                </h3>
+                <p class="text-center text-lg text-gray-500">
+                  Do you want to log out?
+                </p>
+                <div
+                  class="flex items-center justify-between gap-2 md:gap-4 mt-5"
+                >
                   <form method="dialog">
-                    <button class="py-4 px-10 border border-gray-300 cursor-pointer text-base font-bold text-[#333333] rounded-[38px] ">Cancel</button>
+                    <button
+                      class="py-4 px-10 border border-gray-300 cursor-pointer text-base font-bold text-[#333333] rounded-[38px]"
+                    >
+                      Cancel
+                    </button>
                   </form>
-                  <button id="log-out" class=" py-4 px-10 border bg text-white text-base font-bold rounded-[38px] cursor-pointer">Log Out</button>
+                  <button
+                    id="log-out"
+                    class="py-4 px-10 border bg text-white text-base font-bold rounded-[38px] cursor-pointer"
+                  >
+                    Log Out
+                  </button>
                 </div>
               </div>
             </dialog>
@@ -113,15 +134,18 @@
         <div
           class="flex justify-between items-center bg-[#fff] rounded-2xl shadow1 p-4"
         >
-        <!-- Mobile menu bar -->
+          <!-- Mobile menu bar -->
           <div class="md:hidden">
             <i id="show-menu" class="fa-solid fa-bars text-3xl"></i>
           </div>
           <!-- desktop text -->
           <div class="hidden md:block">
-            <div class="flex items-center gap-2 ">
-              <div >
-                <h1 id="section-text" class="md:text-4xl text-2xl text-[#333333] font-semibold py-2">
+            <div class="flex items-center gap-2">
+              <div>
+                <h1
+                  id="section-text"
+                  class="md:text-4xl text-2xl text-[#333333] font-semibold py-2"
+                >
                   Welcome to Swift Express Cargo, ABC-123
                 </h1>
                 <p id="section-title" class="text-base text-[#7B7B7B]">
@@ -129,28 +153,40 @@
                 </p>
               </div>
               <div id="section-img" class="">
-                <img  src="../images/hand.svg" alt="" />
+                <img src="../images/hand.svg" alt="" />
               </div>
-          </div>
+            </div>
           </div>
           <!-- Mobile Menu -->
           <div class="flex gap-3 items-center">
-            <img id="notification"
+            <img
+              id="notification"
               class="p-4 px-4.5 shadow-xl rounded-full cursor-pointer hover-btn"
               src="../images/notification.svg"
               alt=""
             />
-            <img id="account"
+            <img
+              id="account"
               class="h-[50px] cursor-pointer w-[50px] mt-2.5 rounded-full"
               src="../images/profile.jpg"
               alt=""
             />
           </div>
         </div>
+        <div class="flex justify-center items-center md:hidden pt-5">
+          <h1
+            class="text-4xl font-bold text-center text-[#333333]"
+            id="header-text"
+          >
+            Overview Section
+          </h1>
+        </div>
         <!-- Overview Section -->
         <div class="" id="overview-section">
           <!-- Overview Card -->
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-7">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-7"
+          >
             <div
               class="bg-[#6DA0151A] shadow1 p-8 rounded-2xl relative cursor-pointer"
             >
@@ -243,7 +279,9 @@
           <!-- overview package -->
           <div class="bg-white rounded-2xl p-5.5 shadow1">
             <div class="flex justify-between items-center">
-              <p class="text-[#5D5D5D] font-semibold md:text-2xl text-xl">Your Packages</p>
+              <p class="text-[#5D5D5D] font-semibold md:text-2xl text-xl">
+                Your Packages
+              </p>
               <button
                 id=""
                 class="md:text-base text-sm bg-text flex items-center gap-2 cursor-pointer"
@@ -258,7 +296,9 @@
                 src="../images/dashboard-packeg.svg"
                 alt=""
               />
-              <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
+              <p
+                class="text-[#5D5D5D] text-lg font-light text-center md:text-start"
+              >
                 You have no packages at this moment
               </p>
             </div>
@@ -272,7 +312,7 @@
                 </p>
                 <button
                   id=""
-                  class=" text-sm md:text-base bg-text flex items-center gap-2 cursor-pointer"
+                  class="text-sm md:text-base bg-text flex items-center gap-2 cursor-pointer"
                 >
                   <p>See more</p>
                   <i class="fa-solid fa-chevron-right"></i>
@@ -286,7 +326,9 @@
                   src="../images/pament.svg"
                   alt=""
                 />
-                <p class="text-[#5D5D5D] text-center md:text-start text-lg font-light">
+                <p
+                  class="text-[#5D5D5D] text-center md:text-start text-lg font-light"
+                >
                   You have no packages at this moment
                 </p>
               </div>
@@ -311,7 +353,9 @@
                   src="../images/delevary.svg"
                   alt=""
                 />
-                <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
+                <p
+                  class="text-[#5D5D5D] text-lg font-light text-center md:text-start"
+                >
                   You have no packages at this moment
                 </p>
               </div>
@@ -320,7 +364,9 @@
         </div>
         <!-- Package Section -->
         <div class="hidden w-[100%]" id="packages-section">
-          <div class="flex flex-col lg:flex-row justify-between items-center py-7 ">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center py-7"
+          >
             <div>
               <p class="text-[#7B7B7B] text-base text-center md:text-start">
                 Have a package heading to Miami now? Prealert it here and
@@ -367,19 +413,19 @@
                 <div class="relative">
                   <input
                     class="px-5 py-4 w-full lg:w-[100px] dashboard-input outline-none"
-                    type="text" list="fruit-options"
+                    type="text"
+                    list="fruit-options"
                     placeholder="All"
                     name=""
                     id=""
                   />
                   <datalist id="fruit-options">
-                    <option value="Apple">
-                    <option value="Banana">
-                    <option value="Mango">
-                    <option value="Orange">
-                    <option value="Grapes">
+                    <option value="Apple"></option>
+                    <option value="Banana"></option>
+                    <option value="Mango"></option>
+                    <option value="Orange"></option>
+                    <option value="Grapes"></option>
                   </datalist>
-
                 </div>
                 <div class="relative">
                   <input
@@ -444,7 +490,9 @@
               <h4 class="text-[#5D5D5D] text-lg text-center md:text-start">
                 There are no packages to display
               </h4>
-              <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
+              <p
+                class="text-[#5D5D5D] text-lg font-light text-center md:text-start"
+              >
                 Lorem ipsum dolor sit amet consectetur. Orci tempor nisi in quis
                 ornare at.
               </p>
@@ -536,7 +584,9 @@
               />
             </div>
           </div>
-          <p class="text-[#5D5D5D] text-xl py-2 mt-6 text-center md:text-start">Add Invoice</p>
+          <p class="text-[#5D5D5D] text-xl py-2 mt-6 text-center md:text-start">
+            Add Invoice
+          </p>
           <p class="text-[#5D5D5D] text-base text-center md:text-start">
             Lorem ipsum dolor sit amet consectetur. A tempus aliquam non aliquam
             purus semper. Maecenas egestas <br />
@@ -548,7 +598,9 @@
             <p class="text-center text-[Half Black] text-base font-light">
               Upload Your Invoice Picture or Paste <br />Invoice Page Text
             </p>
-            <div class="flex justify-center flex-col md:flex-row items-center gap-5 mt-4">
+            <div
+              class="flex justify-center flex-col md:flex-row items-center gap-5 mt-4"
+            >
               <button
                 class="flex items-center justify-center gap-2 rate1 py-4 px-5 rounded-lg cursor-pointer"
               >
@@ -602,7 +654,9 @@
         </div>
         <!-- Payment Section -->
         <div class="hidden" id="payment-section">
-          <div class="flex gap-5 md:gap-8 pt-8 pb-2 text-xl md:text-2xl text-[#5D5D5D]">
+          <div
+            class="flex gap-5 md:gap-8 pt-8 pb-2 text-xl md:text-2xl text-[#5D5D5D]"
+          >
             <h1 id="pending" class="bg-text cursor-pointer">Pending</h1>
             <h1 id="history" class="cursor-pointer">History</h1>
             <h1 id="statement" class="cursor-pointer">Statement</h1>
@@ -634,7 +688,9 @@
                   src="../images/payment-sectioon.svg"
                   alt=""
                 />
-                <p class="text-[#5D5D5D] text-lg font-light text-center md:text-start">
+                <p
+                  class="text-[#5D5D5D] text-lg font-light text-center md:text-start"
+                >
                   You have no pending payments
                 </p>
               </div>
@@ -654,7 +710,9 @@
         <!-- Cost Calculator Section -->
         <div class="hidden" id="cost-calculator-section">
           <div class="px-[30px] py-9 shadow1 my-8 rounded-xl">
-            <p class="text-2xl font-medium text-[#717171] mb-8 text-center md:text-start">
+            <p
+              class="text-2xl font-medium text-[#717171] mb-8 text-center md:text-start"
+            >
               Check Your Shipping Price
             </p>
             <form action="">
@@ -725,43 +783,103 @@
             <div class="flex justify-between items-center mb-4 md:mb-8">
               <p class="text-[#7B7B7B] text-base md:text-xl">Full Name</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] text-base md:text-xl font-semibold copy-text" id="text1">XYZ POS-135748</p>
-                <img class="cursor-pointer copy-btn" data-target="text1" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] text-base md:text-xl font-semibold copy-text"
+                  id="text1"
+                >
+                  XYZ POS-135748
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text1"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex justify-between items-center mb-4 md:mb-8">
-              <p class="text-[#7B7B7B] text-base md:text-xl ">Address Line</p>
+              <p class="text-[#7B7B7B] text-base md:text-xl">Address Line</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text" id="text2">1 Aeropost Way</p>
-                <img class="cursor-pointer copy-btn" data-target="text2" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text"
+                  id="text2"
+                >
+                  1 Aeropost Way
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text2"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex justify-between items-center mb-4 md:mb-8">
               <p class="text-[#7B7B7B] text-base md:text-xl">City</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text" id="text3">Dhaka</p>
-                <img class="cursor-pointer copy-btn" data-target="text3" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text"
+                  id="text3"
+                >
+                  Dhaka
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text3"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex justify-between items-center mb-4 md:mb-8">
               <p class="text-[#7B7B7B] md:text-xl text-base">State</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] text-base md:text-xl font-semibold copy-text" id="text-4">Dhaka</p>
-                <img class="cursor-pointer copy-btn" data-target="text-4" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] text-base md:text-xl font-semibold copy-text"
+                  id="text-4"
+                >
+                  Dhaka
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text-4"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex justify-between items-center mb-4 md:mb-8">
               <p class="text-[#7B7B7B] text-base md:text-xl">ZIP Code</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text" id="text-5">5200</p>
-                <img class="cursor-pointer copy-btn" data-target="text-5" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] font-semibold text-base md:text-xl copy-text"
+                  id="text-5"
+                >
+                  5200
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text-5"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex justify-between items-center">
               <p class="text-[#7B7B7B] text-base md:text-xl">Phone number</p>
               <div class="flex items-center gap-1 md:gap-2">
-                <p class="text-[#6F6E6E] font-semibold copy-text text-base md:text-xl" id="text-6">+8801312203474</p>
-                <img class="cursor-pointer copy-btn" data-target="text-6" src="../images/copy.svg" alt="" />
+                <p
+                  class="text-[#6F6E6E] font-semibold copy-text text-base md:text-xl"
+                  id="text-6"
+                >
+                  +8801312203474
+                </p>
+                <img
+                  class="cursor-pointer copy-btn"
+                  data-target="text-6"
+                  src="../images/copy.svg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -794,9 +912,14 @@
               <p class="text-base text-[#5D5D5D] font-light">
                 Our support team is available on WhatsApp to assist you.
               </p>
-              <a href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question." target="_blank">
-                  <button class="flex gap-1 md:gap-2 items-center px-4 md:px-10 py-4 border border-none cursor-pointer rounded-[38px] mt-3 location-btn">
-                    <i class="fa-brands fa-whatsapp bg-text text-2xl"></i>
+              <a
+                href="https://wa.me/8801833597831?text=Hello!%20I%20have%20a%20question."
+                target="_blank"
+              >
+                <button
+                  class="flex gap-1 md:gap-2 items-center px-4 md:px-10 py-4 border border-none cursor-pointer rounded-[38px] mt-3 location-btn"
+                >
+                  <i class="fa-brands fa-whatsapp bg-text text-2xl"></i>
                   <p class="bg-text">Contact via WhatsApp</p>
                 </button>
               </a>
@@ -805,296 +928,657 @@
         </div>
         <!-- Notification section -->
         <div id="notification-section" class="hidden mt-7">
-            <div class="md:p-9 p-3 shadow1 rounded-xl flex flex-col gap-4">
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#16A34A1A] rounded-lg" src="../images/notification-1.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Package Delivered Successfully</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-1 mt-5 md:mt-0 md:gap-3 justify-center items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
+          <div class="md:p-9 p-3 shadow1 rounded-xl flex flex-col gap-4">
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#16A34A1A] rounded-lg"
+                  src="../images/notification-1.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Package Delivered Successfully
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
                 </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#46C0A21A] rounded-lg" src="../images/notification-2.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-2 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#46C0A21A] rounded-lg" src="../images/notification3.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#7474741A] rounded-lg" src="../images/notification4.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#46C0A21A] rounded-lg" src="../images/notification-1.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#7474741A] rounded-lg" src="../images/notification4.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl">
-                    <div class="flex flex-col md:flex-row items-center gap-2">
-                        <img class="px-3 py-3 bg-[#D977061A] rounded-lg" src="../images/notification5.svg" alt="">
-                        <div>
-                            <p class="text-[#7B7B7B] text-center md:text-start">Out for Delivery</p>
-                            <p class="text-[#7B7B7B] font-light text-center md:text-start">Your package #EX392847 has been delivered to the destination address</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light">
-                        <i class="fa-regular fa-clock"></i>
-                        <p>02 minutes ago</p>
-                        <i class="fa-solid fa-chevron-right cursor-pointer"></i>
-                    </div>
-                </div>
+              </div>
+              <div
+                class="flex gap-1 mt-5 md:mt-0 md:gap-3 justify-center items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
             </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#46C0A21A] rounded-lg"
+                  src="../images/notification-2.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-2 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#46C0A21A] rounded-lg"
+                  src="../images/notification3.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#7474741A] rounded-lg"
+                  src="../images/notification4.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#46C0A21A] rounded-lg"
+                  src="../images/notification-1.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#7474741A] rounded-lg"
+                  src="../images/notification4.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row justify-between px-4 py-3 rate1 rounded-xl"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-2">
+                <img
+                  class="px-3 py-3 bg-[#D977061A] rounded-lg"
+                  src="../images/notification5.svg"
+                  alt=""
+                />
+                <div>
+                  <p class="text-[#7B7B7B] text-center md:text-start">
+                    Out for Delivery
+                  </p>
+                  <p
+                    class="text-[#7B7B7B] font-light text-center md:text-start"
+                  >
+                    Your package #EX392847 has been delivered to the destination
+                    address
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center gap-1 mt-5 md:mt-0 md:gap-3 items-center text-[#6F6E6E] font-light"
+              >
+                <i class="fa-regular fa-clock"></i>
+                <p>02 minutes ago</p>
+                <i class="fa-solid fa-chevron-right cursor-pointer"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Profile setting section -->
         <div id="account-section" class="hidden">
-            <div class="flex flex-col lg:flex-row gap-6 ">
-              <!-- Main profile -->
-              <div class="w-full lg:w-[72%]">
-                <!-- Basic Information -->
-                <div class="md:px-[30px] px-3 py-9 shadow1 rounded-xl my-8">
-                  <p class="text-[#717171] text-2xl font-medium py-1 text-center md:text-start">Profile Information</p>
-                  <p class="text-[#717171] text-sm font-light text-center md:text-start">ID: 1154564</p>
-                  <div class="mt-5 flex gap-3 md:gap-6 flex-col">
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl">Account Number</h4>
-                      <p class="text-[#7B7B7B] text-base md:text-xl font-medium">POS-135748</p>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Account Type</h4>
-                      <p class="text-[#7B7B7B] text-base md:text-xl font-medium">Basic</p>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Phone No.</h4>
-                      <div class="flex items-center gap-2">
-                        <p class="text-[#7B7B7B] text-base md:text-xl font-medium">01312203474</p>
-                        <img class="cursor-pointer" src="../images/account-copy.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Email</h4>
-                      <div class="flex items-center gap-2">
-                        <p class="text-[#7B7B7B] text-base md:text-xl font-medium ">nobodipdebnath45<br class="md:block" >@gmail.com</p>
-                        <img class="cursor-pointer" src="../images/account-copy.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Birthdate</h4>
-                      <div class="flex items-center gap-2">
-                        <p class="text-[#7B7B7B] text-base md:text-xl font-medium">02/12/2004</p>
-                        <img class="cursor-pointer" src="../images/account-copy.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Gender</h4>
-                      <div class="flex items-center gap-2">
-                        <p class="text-[#7B7B7B] text-base md:text-xl font-medium">Male</p>
-                        <img class="cursor-pointer" src="../images/account-copy.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <h4 class="text-[#7B7B7B] text-base md:text-xl ">Home Address</h4>
-                      <div class="flex items-center gap-2">
-                        <p class="text-[#7B7B7B] text-base md:text-xl font-medium">Bhulli,Thakurgaon</p>
-                        <img class="cursor-pointer" src="../images/account-copy.svg" alt="">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <button class="w-full  text-xl rate1 py-4 rounded-[38px] text-[#46C0A2] cursor-pointer">Set Password</button>
+          <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Main profile -->
+            <div class="w-full lg:w-[72%]">
+              <!-- Basic Information -->
+              <div class="md:px-[30px] px-3 py-9 shadow1 rounded-xl my-8">
+                <p
+                  class="text-[#717171] text-2xl font-medium py-1 text-center md:text-start"
+                >
+                  Profile Information
+                </p>
+                <p
+                  class="text-[#717171] text-sm font-light text-center md:text-start"
+                >
+                  ID: 1154564
+                </p>
+                <div class="mt-5 flex gap-3 md:gap-6 flex-col">
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">
+                      Account Number
+                    </h4>
+                    <p class="text-[#7B7B7B] text-base md:text-xl font-medium">
+                      POS-135748
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">
+                      Account Type
+                    </h4>
+                    <p class="text-[#7B7B7B] text-base md:text-xl font-medium">
+                      Basic
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">
+                      Phone No.
+                    </h4>
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[#7B7B7B] text-base md:text-xl font-medium"
+                      >
+                        01312203474
+                      </p>
+                      <img
+                        class="cursor-pointer"
+                        src="../images/account-copy.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
-                </div>
-                <!-- Delivery information -->
-                <div class="py-9 px-4 md:px-[30px] shadow1 rounded-xl">
-                  <p class="text-[#717171] text-2xl font-medium py-1 text-center md:text-start">Delivery preferences</p>
-                  <p class="text-[#717171] text-sm font-light text-center md:text-start">Select your main delivery point.</p>
-                  <div class="py-8 grid grid-cols-1  md:grid-cols-3 items-center gap-4">
-                    <label id="delivery" class="flex justify-center gap-2 w-full py-4 border border-[#DDD] rounded-lg">
-                      <input id="input-1" type="radio"  name="gender" value="delivered">
-                      <p class="text-[#747474]">Home Delivery</p>
-                    </label>
-
-                    <label id="store" class="flex justify-center w-full gap-2 py-4 border border-[#DDD] rounded-lg">
-                      <input type="radio" name="gender" value="store"> 
-                      <p class="text-[#747474]">Pickup Store</p>
-                    </label>
-
-                    <label id="locker" class="flex justify-center w-full gap-2 py-4 border border-[#DDD] rounded-lg">
-                      <input type="radio" name="gender" value="Locker"> 
-                      <p class="text-[#747474]">Pickup Smart Locker</p>
-                    </label>
-                  </div>  
-                  <div class="md:p-6 p-3 bg-[#0B2A770A] rounded-2xl">
-                    <p class="text-[#5D5D5D] text-lg font-bold mb-4 text-center md:text-start">Gopaul Lands Marabella - Store</p>
-                    <div class="flex items-center gap-1.5 mb-2">
-                      <img src="../images/notification4.svg" alt="">
-                      <p class="text-base text-[#5D5D5D] font-light hover:underline cursor-pointer">Trinidad, Victoria, Aeroport Ltd Gopaul Lands Hardware Compound Gopaul Lands, Marabella</p>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">Email</h4>
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[#7B7B7B] text-base md:text-xl font-medium"
+                      >
+                        nobodipdebnath45<br class="md:block" />@gmail.com
+                      </p>
+                      <img
+                        class="cursor-pointer"
+                        src="../images/account-copy.svg"
+                        alt=""
+                      />
                     </div>
-                    <div class="flex items-center gap-1.5 mb-4">
-                      <i class="fa-regular fa-clock text-[#5D5D5D]"></i>
-                      <p class="text-base text-[#5D5D5D] font-light hover:underline cursor-pointer">Schedule:Mon to Fri: 9:00 AM - 5:00 PM Sat: 9:00 AM - 1:00 PM</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">
+                      Birthdate
+                    </h4>
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[#7B7B7B] text-base md:text-xl font-medium"
+                      >
+                        02/12/2004
+                      </p>
+                      <img
+                        class="cursor-pointer"
+                        src="../images/account-copy.svg"
+                        alt=""
+                      />
                     </div>
-                    <div class="flex justify-center md:justify-start">
-                      <button class="bg text-white py-3 px-10 rounded-[38px] cursor-pointer text-lg font-semibold">Go Now</button>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">Gender</h4>
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[#7B7B7B] text-base md:text-xl font-medium"
+                      >
+                        Male
+                      </p>
+                      <img
+                        class="cursor-pointer"
+                        src="../images/account-copy.svg"
+                        alt=""
+                      />
                     </div>
-                  </div>               
-                </div>
-                <!-- Document information -->
-                <div class="py-9 px-3 md:px-[30px] shadow1 rounded-xl mt-8">
-                  <p class="text-[#717171] text-xl font-medium py-1 text-center md:text-start">Documents</p>
-                  <p class="text-[#717171] text-sm font-light text-center md:text-start">Lorem ipsum dolor sit amet consectetur.</p>
-                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
-                    <div class="px-8 py-9 bg-[#0B2A770A] rounded-2xl">
-                      <p class="text-center text-[#333333] text-base font-bold mb-4">1583 File</p>
-                      <p class="text-center text-[#333333] text-base font-light mb-4">Document required by USPS for handing <br>your packages to a third party</p>
-                      <div class="flex justify-center">
-                        <button class="flex  items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]">
-                          <img src="../images/sign.svg" alt="">
-                          <p>Sign</p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <h4 class="text-[#7B7B7B] text-base md:text-xl">
+                      Home Address
+                    </h4>
+                    <div class="flex items-center gap-2">
+                      <p
+                        class="text-[#7B7B7B] text-base md:text-xl font-medium"
+                      >
+                        Bhulli,Thakurgaon
+                      </p>
+                      <img
+                        class="cursor-pointer"
+                        src="../images/account-copy.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <button onclick="my_modal_3.showModal()"
+                      class="w-full text-xl rate1 py-4 rounded-[38px] text-[#46C0A2] cursor-pointer"
+                    >
+                      Set Password
+                    </button>
+                  </div>
+                  <!-- You can open the modal using ID.showModal() method -->
+                  <dialog id="my_modal_3" class="modal">
+                    <div class="bg-[#FFF] p-12.5 rounded-[30px] border border-[#E7EAEC] shadow-sm">
+                      <form class="relative" method="dialog">
+                        <button class="absolute -top-10 -right-10 ">
+                          <i class="fa-solid fa-xmark text-2xl font-bold rounded-full p-3.5 px-4 hover-btn border border-gray-300 cursor-pointer text-[#333333] bg-gray-100"></i>
                         </button>
+                      </form>
+                      <h3 class="text-4xl text-[#333333] font-semibold text-center">Create New Password</h3>
+                      <p class="text-xl text-[#7B7B7B] font-light text-center">
+                        Please create a strong password for your account
+                      </p>
+                      <div class="flex flex-col gap-3 my-6">
+                        <input class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]" type="password" name="" placeholder="New Password" id="">
+
+                        <input class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]" type="password" name="" placeholder="Confirm password" id="">
+                      </div>
+                      <p class="text-base text-[#7B7B7B]">Password must contain:</p>
+                      <div class="grid grid-cols-2 gap-3 mt-3 mb-6">
+                        <div class="flex gap-2 items-center">
+                          <img src="../images/right.svg" alt="">
+                          <p class="bg-text text-base font-light">Uppercase letter</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                          <img src="../images/wrong.svg" alt="">
+                          <p class="text-base text-[#FF3B3B] font-light">Lowercase letter</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                          <img src="../images/right.svg" alt="">
+                          <p  class="bg-text text-base font-light">Number</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                          <img src="../images/wrong.svg" alt="">
+                          <p class="text-base text-[#FF3B3B] font-light">Special character</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                          <img src="../images/wrong.svg" alt="">
+                          <p class="text-base text-[#FF3B3B] font-light">8+ characters</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-center ">
+                        <button class="text-xl font-bold py-4.5 bg w-full text-[#FFFFFF] rounded-[32px] cursor-pointer">change</button>
                       </div>
                     </div>
-                    <div class="px-8 py-9 bg-[#0B2A770A] rounded-2xl">
-                      <p class="text-center text-[#333333] text-base font-bold mb-4">ID File</p>
-                      <p class="text-center text-[#333333] text-base font-light mb-4">A copy of an identification card with photo.</p>
-                      <div class="flex justify-center">
-                        <button class="flex  items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]">
-                          <img src="../images/add.svg" alt="">
-                          <p>Add</p>
-                        </button>
-                      </div>
-                    </div>
-                  </div>                  
+                  </dialog>
                 </div>
               </div>
-              <!-- Connect information -->
-              <div class="w-full lg:w-[28%]">
-                <div class="p-6 shadow1 rounded-xl mt-8">
-                  <p class="text-2xl text-[#717171] font-medium text-center md:text-start">Connected accounts</p>
-                  <div class="mt-8 flex gap-3 flex-col">
-                    <button class="flex justify-between items-center py-4 px-5 rate1 w-full rounded-[32px] border border-[#46C0A2] cursor-pointer">
-                      <div class="flex items-center gap-2">
-                        <img src="../images/apple.svg" alt="">
-                        <p class="text-base font-medium bg-text">Link With Apple</p>
-                      </div>
-                      <img src="../images/arrow-right.svg" alt="">
-                    </button>
-                    <button class="flex justify-between items-center py-4 px-5 rate1 w-full rounded-[32px] border border-[#46C0A2] cursor-pointer">
-                      <div class="flex items-center gap-2">
-                        <img src="../images/google.svg" alt="">
-                        <p class="text-base font-medium bg-text">Link With Google</p>
-                      </div>
-                      <img src="../images/arrow-right.svg" alt="">
+              <!-- Delivery information -->
+              <div class="py-9 px-4 md:px-[30px] shadow1 rounded-xl">
+                <p
+                  class="text-[#717171] text-2xl font-medium py-1 text-center md:text-start"
+                >
+                  Delivery preferences
+                </p>
+                <p
+                  class="text-[#717171] text-sm font-light text-center md:text-start"
+                >
+                  Select your main delivery point.
+                </p>
+                <div
+                  class="py-8 grid grid-cols-1 md:grid-cols-3 items-center gap-4"
+                >
+                  <label
+                    id="delivery"
+                    class="flex justify-center gap-2 w-full py-4 border border-[#DDD] rounded-lg"
+                  >
+                    <input
+                      id="input-1"
+                      type="radio"
+                      name="gender"
+                      value="delivered"
+                    />
+                    <p class="text-[#747474]">Home Delivery</p>
+                  </label>
+
+                  <label
+                    id="store"
+                    class="flex justify-center w-full gap-2 py-4 border border-[#DDD] rounded-lg"
+                  >
+                    <input type="radio" name="gender" value="store" />
+                    <p class="text-[#747474]">Pickup Store</p>
+                  </label>
+
+                  <label
+                    id="locker"
+                    class="flex justify-center w-full gap-2 py-4 border border-[#DDD] rounded-lg"
+                  >
+                    <input type="radio" name="gender" value="Locker" />
+                    <p class="text-[#747474]">Pickup Smart Locker</p>
+                  </label>
+                </div>
+                <div class="md:p-6 p-3 bg-[#0B2A770A] rounded-2xl">
+                  <p
+                    class="text-[#5D5D5D] text-lg font-bold mb-4 text-center md:text-start"
+                  >
+                    Gopaul Lands Marabella - Store
+                  </p>
+                  <div class="flex items-center gap-1.5 mb-2">
+                    <img src="../images/notification4.svg" alt="" />
+                    <p
+                      class="text-base text-[#5D5D5D] font-light hover:underline cursor-pointer"
+                    >
+                      Trinidad, Victoria, Aeroport Ltd Gopaul Lands Hardware
+                      Compound Gopaul Lands, Marabella
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-1.5 mb-4">
+                    <i class="fa-regular fa-clock text-[#5D5D5D]"></i>
+                    <p
+                      class="text-base text-[#5D5D5D] font-light hover:underline cursor-pointer"
+                    >
+                      Schedule:Mon to Fri: 9:00 AM - 5:00 PM Sat: 9:00 AM - 1:00
+                      PM
+                    </p>
+                  </div>
+                  <div class="flex justify-center md:justify-start">
+                    <button
+                      class="bg text-white py-3 px-10 rounded-[38px] cursor-pointer text-lg font-semibold"
+                    >
+                      Go Now
                     </button>
                   </div>
                 </div>
-                <div class="p-6 shadow1 rounded-xl mt-6">
-                  <p class="text-2xl text-[#717171] font-medium text-center md:text-start">Payment Methods</p>
-                  <p class="font-light text-[#717171] text-base text-center md:text-start">You have no saved payment methods</p>
-                  <div class="mt-8 flex gap-3 flex-col">
-                    <button class=" py-4 px-5  bg w-full rounded-[32px] border border-[#46C0A2] cursor-pointer text-white font-medium text-base"> Add
-                    </button>
+              </div>
+              <!-- Document information -->
+              <div class="py-9 px-3 md:px-[30px] shadow1 rounded-xl mt-8">
+                <p
+                  class="text-[#717171] text-xl font-medium py-1 text-center md:text-start"
+                >
+                  Documents
+                </p>
+                <p
+                  class="text-[#717171] text-sm font-light text-center md:text-start"
+                >
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-8">
+                  <div class="px-8 py-9 bg-[#0B2A770A] rounded-2xl">
+                    <p
+                      class="text-center text-[#333333] text-base font-bold mb-4"
+                    >
+                      1583 File
+                    </p>
+                    <p
+                      class="text-center text-[#333333] text-base font-light mb-4"
+                    >
+                      Document required by USPS for handing <br />your packages
+                      to a third party
+                    </p>
+                    <div class="flex justify-center">
+                      <button
+                        class="flex items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]"
+                      >
+                        <img src="../images/sign.svg" alt="" />
+                        <p>Sign</p>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="p-6 shadow1 rounded-xl mt-6">
-                  <p class="text-2xl text-[#717171] font-medium text-center md:text-start">Authorized Users</p>
-                  <p class="font-light text-[#717171] text-base text-center md:text-start">You have no authorized users</p>
-                  <div class="mt-8 flex gap-3 flex-col">
-                    <button class=" py-4 px-5  bg w-full rounded-[32px] border border-[#46C0A2] cursor-pointer text-white font-medium text-base"> Add
-                    </button>
-                  </div>
-                </div>
-                <div class="p-6 shadow1 rounded-xl mt-6">
-                  <p class="text-2xl text-[#717171] font-medium text-center md:text-start">Notifications</p>
-                  <div class="mt-6 flex gap-4 flex-col">
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">Push notifications</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">Email notifications</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">WhatsApp notifications</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">Package status</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">Store hours or services</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
-                    </div>
-                    <div class="flex justify-between items-center">
-                      <p class="text-[#717171] font-light text-base">News and offers</p>
-                      <input type="checkbox" checked="checked" class="toggle toggle-success tog border border-[#46C0A2]" />
+                  <div class="px-8 py-9 bg-[#0B2A770A] rounded-2xl">
+                    <p
+                      class="text-center text-[#333333] text-base font-bold mb-4"
+                    >
+                      ID File
+                    </p>
+                    <p
+                      class="text-center text-[#333333] text-base font-light mb-4"
+                    >
+                      A copy of an identification card with photo.
+                    </p>
+                    <div class="flex justify-center">
+                      <button
+                        class="flex items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]"
+                      >
+                        <img src="../images/add.svg" alt="" />
+                        <p>Add</p>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Connect information -->
+            <div class="w-full lg:w-[28%]">
+              <div class="p-6 shadow1 rounded-xl mt-8">
+                <p
+                  class="text-2xl text-[#717171] font-medium text-center md:text-start"
+                >
+                  Connected accounts
+                </p>
+                <div class="mt-8 flex gap-3 flex-col">
+                  <button
+                    class="flex justify-between items-center py-4 px-5 rate1 w-full rounded-[32px] border border-[#46C0A2] cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <img src="../images/apple.svg" alt="" />
+                      <p class="text-base font-medium bg-text">
+                        Link With Apple
+                      </p>
+                    </div>
+                    <img src="../images/arrow-right.svg" alt="" />
+                  </button>
+                  <button
+                    class="flex justify-between items-center py-4 px-5 rate1 w-full rounded-[32px] border border-[#46C0A2] cursor-pointer"
+                  >
+                    <div class="flex items-center gap-2">
+                      <img src="../images/google.svg" alt="" />
+                      <p class="text-base font-medium bg-text">
+                        Link With Google
+                      </p>
+                    </div>
+                    <img src="../images/arrow-right.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 shadow1 rounded-xl mt-6">
+                <p
+                  class="text-2xl text-[#717171] font-medium text-center md:text-start"
+                >
+                  Payment Methods
+                </p>
+                <p
+                  class="font-light text-[#717171] text-base text-center md:text-start"
+                >
+                  You have no saved payment methods
+                </p>
+                <div class="mt-8 flex gap-3 flex-col">
+                  <button
+                    class="py-4 px-5 bg w-full rounded-[32px] border border-[#46C0A2] cursor-pointer text-white font-medium text-base"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 shadow1 rounded-xl mt-6">
+                <p
+                  class="text-2xl text-[#717171] font-medium text-center md:text-start"
+                >
+                  Authorized Users
+                </p>
+                <p
+                  class="font-light text-[#717171] text-base text-center md:text-start"
+                >
+                  You have no authorized users
+                </p>
+                <div class="mt-8 flex gap-3 flex-col">
+                  <button
+                    class="py-4 px-5 bg w-full rounded-[32px] border border-[#46C0A2] cursor-pointer text-white font-medium text-base"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <div class="p-6 shadow1 rounded-xl mt-6">
+                <p
+                  class="text-2xl text-[#717171] font-medium text-center md:text-start"
+                >
+                  Notifications
+                </p>
+                <div class="mt-6 flex gap-4 flex-col">
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      Push notifications
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      Email notifications
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      WhatsApp notifications
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      Package status
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      Store hours or services
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p class="text-[#717171] font-light text-base">
+                      News and offers
+                    </p>
+                    <input
+                      type="checkbox"
+                      checked="checked"
+                      class="toggle toggle-success tog border border-[#46C0A2]"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1103,5 +1587,4 @@
   <script src="../script/deshboard.js"></script>
   <script src="../script/menu.js"></script>
   <script src="../script/logout.js"></script>
-
 </html>

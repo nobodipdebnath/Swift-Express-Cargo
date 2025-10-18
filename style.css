@@ -22,7 +22,7 @@
 .hover-btn:hover {
   background: var(--Gredient, linear-gradient(90deg, #6da015 0%, #46c0a2 100%));
   color: white;
-  transition: 2s;
+  transition: 1s;
 }
 .arrow {
   padding: 17px 20px;
