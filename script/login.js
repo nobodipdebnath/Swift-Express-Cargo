@@ -2,7 +2,7 @@ document.getElementById('login').addEventListener('click', function(event){
     event.preventDefault();
     const userEmail = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
-    if(userEmail === 'nobodipdebnath45@gmail.com' && password ==='1234'){
+    if(userEmail === 'shift@gmail.com' && password ==='1234'){
         alert('You are log in')
         window.location.href = '../page/dashboard.html'
     }
