@@ -29,6 +29,7 @@
   </head>
   <body class="roboto relative bg-[#FDFDFD]">
     <div class="md:mx-10 mx-5 my-10 flex gap-8 h-auto">
+      <!-- Left side -->
       <div class="w-[20%]  dashboard-first p-7.5 h-[100vh]">
         <div class="flex justify-between flex-col gap-3">
           <div class="flex flex-col gap-3">
@@ -103,7 +104,9 @@
           </div>
         </div>
       </div>
+      <!-- Right side -->
       <div class="md:w-[80%] w-full">
+        <!-- top content -->
         <div
           class="flex md:justify-between items-center bg-[#fff] rounded-2xl shadow1 p-4"
         >
@@ -133,7 +136,9 @@
             />
           </div>
         </div>
+        <!-- Overview Section -->
         <div class="" id="overview-section">
+          <!-- Overview Card -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-7">
             <div
               class="bg-[#6DA0151A] shadow1 p-8 rounded-2xl relative cursor-pointer"
@@ -224,6 +229,7 @@
               </p>
             </div>
           </div>
+          <!-- overview package -->
           <div class="bg-white rounded-2xl p-5.5 shadow1">
             <div class="flex justify-between items-center">
               <p class="text-[#5D5D5D] font-semibold md:text-2xl text-xl">Your Packages</p>
@@ -246,6 +252,7 @@
               </p>
             </div>
           </div>
+          <!-- overview pending & payment -->
           <div class="grid py-7 grid-cols-1 lg:grid-cols-2 gap-7">
             <div class="bg-white rounded-2xl p-5.5 shadow1">
               <div class="flex justify-between items-center">
@@ -300,6 +307,7 @@
             </div>
           </div>
         </div>
+        <!-- Package Section -->
         <div class="hidden w-[100%]" id="packages-section">
           <div class="flex justify-between items-center py-7 ">
             <div>
@@ -432,11 +440,13 @@
             </div>
           </div>
         </div>
+        <!-- Package Create Section -->
         <div class="hidden" id="create-section">
           <p class="text-[#7B7B7B] text-base py-3">
             Complete prealert so we know your package is on its way and we can
             process it as fast as possible.
           </p>
+          <!-- create package form -->
           <div class="grid grid-cols-2 gap-5">
             <div>
               <p class="text-[#5D5D5D] text-xl font-light py-2">
@@ -579,6 +589,7 @@
             </button>
           </div>
         </div>
+        <!-- Payment Section -->
         <div class="hidden" id="payment-section">
           <div class="flex gap-8 pt-8 pb-2 text-2xl text-[#5D5D5D]">
             <h1 id="pending" class="bg-text cursor-pointer">Pending</h1>
@@ -629,6 +640,7 @@
             </h1>
           </div>
         </div>
+        <!-- Cost Calculator Section -->
         <div class="hidden" id="cost-calculator-section">
           <div class="px-[30px] py-9 shadow1 my-8 rounded-xl">
             <p class="text-2xl font-medium text-[#717171] mb-8">
@@ -695,6 +707,7 @@
             </form>
           </div>
         </div>
+        <!-- My address section -->
         <div class="hidden" id="location-section">
           <div class="px-[30px] py-9 rounded-xl my-8 shadow1">
             <p class="text-[#717171] text-2xl font-medium mb-8">Your Address</p>
@@ -779,6 +792,7 @@
             </div>
           </div>
         </div>
+        <!-- Notification section -->
         <div id="notification-section" class="hidden mt-7">
             <div class="p-9 shadow1 rounded-xl flex flex-col gap-4">
                 <div class="flex justify-between px-4 py-3 rate1 rounded-xl">
@@ -881,9 +895,12 @@
                 </div>
             </div>
         </div>
+        <!-- Profile setting section -->
         <div id="account-section" class="hidden">
             <div class="flex gap-6 ">
+              <!-- Main profile -->
               <div class="w-[72%]">
+                <!-- Basic Information -->
                 <div class="px-[30px] py-9 shadow1 rounded-xl my-8">
                   <p class="text-[#717171] text-2xl font-medium py-1">Profile Information</p>
                   <p class="text-[#717171] text-sm font-light">ID: 1154564</p>
@@ -936,6 +953,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- Delivery information -->
                 <div class="py-9 px-[30px] shadow1 rounded-xl">
                   <p class="text-[#717171] text-2xl font-medium py-1">Delivery preferences</p>
                   <p class="text-[#717171] text-sm font-light">Select your main delivery point.</p>
@@ -970,6 +988,7 @@
                     </div>
                   </div>               
                 </div>
+                <!-- Document information -->
                 <div class="py-9 px-[30px] shadow1 rounded-xl mt-8">
                   <p class="text-[#717171] text-xl font-medium py-1">Documents</p>
                   <p class="text-[#717171] text-sm font-light">Lorem ipsum dolor sit amet consectetur.</p>
@@ -997,6 +1016,7 @@
                   </div>                  
                 </div>
               </div>
+              <!-- Connect information -->
               <div class="w-[28%]">
                 <div class="p-6 shadow1 rounded-xl mt-8">
                   <p class="text-2xl text-[#717171] font-medium">Connected accounts</p>

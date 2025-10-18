@@ -34,6 +34,7 @@
       <nav
         class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
       >
+       <!--Logo  -->
         <div>
           <a href="../index.html">
             <img
@@ -69,7 +70,6 @@
             </li>
           </ul>
         </div>
-
         <!-- Mobile Menu Icon -->
         <div class="md:hidden">
           <i
@@ -77,7 +77,6 @@
             class="fa-solid text-white text-3xl fa-bars cursor-pointer"
           ></i>
         </div>
-
         <!-- Sign In/Sign Up Buttons for Desktop -->
         <div class="hidden md:flex justify-between gap-3">
           <button class="button bg" onclick="my_modal_4.showModal()">
@@ -173,6 +172,7 @@
           </div>
         </div>
       </dialog>
+      <!-- Sign in Form -->
       <dialog id="my_modal_4" class="modal">
         <div class="modal-box">
           <form method="dialog">
@@ -310,14 +310,16 @@
             >
           </li>
           <li class="mt-2 pt-6 border-t border-gray-700">
-            <button onclick="my_modal_4.showModal()"
+            <button
+              onclick="my_modal_4.showModal()"
               class="w-full py-3 rounded-[38px] bg-[#89CE14] text-white font-semibold"
             >
               Sign Up
             </button>
           </li>
           <li>
-            <button onclick="my_modal_3.showModal()"
+            <button
+              onclick="my_modal_3.showModal()"
               class="w-full py-3 mt-2 rounded-[38px] border border-white text-white font-semibold"
             >
               Sign In

@@ -34,6 +34,7 @@
       <nav
         class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
       >
+      <!-- Logo -->
         <div>
           <a href="../index.html">
             <img
@@ -43,12 +44,14 @@
             />
           </a>
         </div>
+        <!-- mobile menu bar -->
         <div class="md:hidden">
           <i
             id="menu-icon"
             class="fa-solid text-white text-3xl fa-bars cursor-pointer"
           ></i>
         </div>
+        <!-- desktop menu -->
         <div class="hidden lg:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
@@ -73,7 +76,7 @@
             </li>
           </ul>
         </div>
-
+        <!-- sign in or sign up button -->
         <div class="hidden md:flex justify-between gap-3">
           <button class="button bg" onclick="my_modal_4.showModal()">
             Sign Up
@@ -86,6 +89,7 @@
           </button>
         </div>
       </nav>
+      <!-- sign in form -->
       <dialog id="my_modal_3" class="modal">
         <div class="modal-box">
           <form method="dialog" class="relative">
@@ -167,6 +171,7 @@
           </div>
         </div>
       </dialog>
+      <!-- Sign up form -->
       <dialog id="my_modal_4" class="modal">
         <div class="modal-box">
           <form method="dialog">
