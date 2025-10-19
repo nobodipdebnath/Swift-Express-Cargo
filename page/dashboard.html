@@ -417,7 +417,6 @@
                     list="fruit-options"
                     placeholder="All"
                     name=""
-                    id=""
                   />
                   <datalist id="fruit-options">
                     <option value="Apple"></option>
@@ -433,7 +432,6 @@
                     type="text"
                     placeholder="Search packages"
                     name=""
-                    id=""
                   />
                   <i
                     class="fa-solid fa-magnifying-glass absolute top-5 right-5 text-[#6da015] cursor-pointer"
@@ -445,7 +443,6 @@
                     type="text"
                     placeholder="Clear filters"
                     name=""
-                    id=""
                   />
                   <i
                     class="fa-solid fa-xmark absolute top-5 right-5 text-[#6da015] cursor-pointer"
@@ -457,7 +454,6 @@
                     type="text"
                     placeholder="Reload"
                     name=""
-                    id=""
                   />
                   <i
                     class="fa-solid fa-rotate absolute top-5 right-5 text-[#6da015] cursor-pointer"
@@ -516,7 +512,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="Enter Tracking Number"
                 name=""
-                id=""
               />
             </div>
             <div>
@@ -528,7 +523,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="Select Company"
                 name=""
-                id=""
               />
             </div>
             <div class="relative">
@@ -540,7 +534,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="Store"
                 name=""
-                id=""
               />
               <i
                 class="fa-solid fa-magnifying-glass text-2xl absolute top-24 md:top-17 cursor-pointer text-[#5D5D5D] right-8"
@@ -555,7 +548,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="00.00"
                 name=""
-                id=""
               />
             </div>
             <div class="relative">
@@ -565,7 +557,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="Consignee"
                 name=""
-                id=""
               />
               <i
                 class="fa-solid fa-magnifying-glass text-2xl absolute top-17 cursor-pointer text-[#5D5D5D] right-8"
@@ -580,7 +571,6 @@
                 class="rounded-xl bg-[#FFF] border border-[#DDD] w-full py-5.5 outline-none px-7"
                 placeholder="Describe"
                 name=""
-                id=""
               />
             </div>
           </div>
@@ -723,7 +713,6 @@
                   class="w-full p-5 dashboard-input outline-none"
                   name=""
                   placeholder="Search for products..."
-                  id=""
                 />
                 <i
                   class="fa-solid fa-magnifying-glass absolute top-14 text-[#46C0A2] right-5 md:right-8 text-2xl"
@@ -737,7 +726,6 @@
                     class="w-full p-5 dashboard-input outline-none"
                     name=""
                     placeholder="0.00"
-                    id=""
                   />
                 </div>
                 <div class="relative">
@@ -747,7 +735,6 @@
                     class="w-full p-5 dashboard-input outline-none"
                     name=""
                     placeholder="Kg"
-                    id=""
                   />
                   <i
                     class="fa-solid fa-chevron-down absolute top-14 text-[#46C0A2] right-5 md:right-8 text-2xl"
@@ -763,7 +750,6 @@
                   class="w-full p-5 dashboard-input outline-none"
                   name=""
                   placeholder="Total product value in USD"
-                  id=""
                 />
               </div>
               <div class="mt-8 flex items-center justify-center">
@@ -1250,7 +1236,8 @@
                     </div>
                   </div>
                   <div class="flex justify-between items-center">
-                    <button onclick="my_modal_3.showModal()"
+                    <button
+                      onclick="my_modal_3.showModal()"
                       class="w-full text-xl rate1 py-4 rounded-[38px] text-[#46C0A2] cursor-pointer"
                     >
                       Set Password
@@ -1258,46 +1245,79 @@
                   </div>
                   <!-- You can open the modal using ID.showModal() method -->
                   <dialog id="my_modal_3" class="modal">
-                    <div class="bg-[#FFF] p-4 mx-3 md:p-12.5 py-8 rounded-[30px] border border-[#E7EAEC] shadow-sm">
+                    <div
+                      class="bg-[#FFF] p-4 mx-3 md:p-12.5 py-8 rounded-[30px] border border-[#E7EAEC] shadow-sm"
+                    >
                       <form class="relative" method="dialog">
-                        <button class="absolute md:-top-10 md:-right-10 -top-2 -right-2 ">
-                          <i class="fa-solid fa-xmark text-2xl font-bold rounded-full p-3.5 px-4 md:hover-btn md:border md:border-gray-300 cursor-pointer text-[#333333] md:bg-gray-100"></i>
+                        <button
+                          class="absolute md:-top-10 md:-right-10 -top-2 -right-2"
+                        >
+                          <i
+                            class="fa-solid fa-xmark text-2xl font-bold rounded-full p-3.5 px-4 md:hover-btn md:border md:border-gray-300 cursor-pointer text-[#333333] md:bg-gray-100"
+                          ></i>
                         </button>
                       </form>
-                      <h3 class="text-4xl text-[#333333] font-semibold text-center">Create New Password</h3>
+                      <h3
+                        class="text-4xl text-[#333333] font-semibold text-center"
+                      >
+                        Create New Password
+                      </h3>
                       <p class="text-xl text-[#7B7B7B] font-light text-center">
                         Please create a strong password for your account
                       </p>
                       <div class="flex flex-col gap-3 my-6">
-                        <input class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]" type="password" name="" placeholder="New Password" id="">
-
-                        <input class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]" type="password" name="" placeholder="Confirm password" id="">
+                        <input
+                          class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]"
+                          type="password"
+                          name=""
+                          placeholder="New Password"
+                        />
+                        <input
+                          class="py-5 px-4 border outline-none w-full rounded-xl rate1 border-[#46C0A2]"
+                          type="password"
+                          name=""
+                          placeholder="Confirm password"
+                        />
                       </div>
-                      <p class="text-base text-[#7B7B7B]">Password must contain:</p>
+                      <p class="text-base text-[#7B7B7B]">
+                        Password must contain:
+                      </p>
                       <div class="grid grid-cols-2 gap-3 mt-3 mb-6">
                         <div class="flex gap-2 items-center">
-                          <img src="../images/right.svg" alt="">
-                          <p class="bg-text text-base font-light">Uppercase letter</p>
+                          <img src="../images/right.svg" alt="" />
+                          <p class="bg-text text-base font-light">
+                            Uppercase letter
+                          </p>
                         </div>
                         <div class="flex gap-2 items-center">
-                          <img src="../images/wrong.svg" alt="">
-                          <p class="text-base text-[#FF3B3B] font-light">Lowercase letter</p>
+                          <img src="../images/wrong.svg" alt="" />
+                          <p class="text-base text-[#FF3B3B] font-light">
+                            Lowercase letter
+                          </p>
                         </div>
                         <div class="flex gap-2 items-center">
-                          <img src="../images/right.svg" alt="">
-                          <p  class="bg-text text-base font-light">Number</p>
+                          <img src="../images/right.svg" alt="" />
+                          <p class="bg-text text-base font-light">Number</p>
                         </div>
                         <div class="flex gap-2 items-center">
-                          <img src="../images/wrong.svg" alt="">
-                          <p class="text-base text-[#FF3B3B] font-light">Special character</p>
+                          <img src="../images/wrong.svg" alt="" />
+                          <p class="text-base text-[#FF3B3B] font-light">
+                            Special character
+                          </p>
                         </div>
                         <div class="flex gap-2 items-center">
-                          <img src="../images/wrong.svg" alt="">
-                          <p class="text-base text-[#FF3B3B] font-light">8+ characters</p>
+                          <img src="../images/wrong.svg" alt="" />
+                          <p class="text-base text-[#FF3B3B] font-light">
+                            8+ characters
+                          </p>
                         </div>
                       </div>
-                      <div class="flex justify-center ">
-                        <button class="text-xl font-bold py-4.5 bg w-full text-[#FFFFFF] rounded-[32px] cursor-pointer">change</button>
+                      <div class="flex justify-center">
+                        <button
+                          class="text-xl font-bold py-4.5 bg w-full text-[#FFFFFF] rounded-[32px] cursor-pointer"
+                        >
+                          change
+                        </button>
                       </div>
                     </div>
                   </dialog>
