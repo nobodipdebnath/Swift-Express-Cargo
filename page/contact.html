@@ -31,10 +31,10 @@
     <header
       class="bg-[url('../images/contact.jpg')] header2 bg-center bg-cover h-full relative"
     >
-      <nav
-        class="flex justify-between items-center px-[7%] py-3 backdrop-blur-xl"
+      <nav id="navbar"
+        class="flex fixed top-0 left-0 right-0 z-50 bg-black/10 justify-between items-center px-[7%] py-3 backdrop-blur-xl"
       >
-      <!-- logo -->
+       <!--Logo  -->
         <div>
           <a href="../index.html">
             <img
@@ -44,8 +44,9 @@
             />
           </a>
         </div>
-        <!-- Desktop menu -->
-        <div class="hidden md:block">
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:block">
           <ul
             class="flex justify-between items-center gap-6 text-white font-medium text-lg"
           >
@@ -69,14 +70,14 @@
             </li>
           </ul>
         </div>
-        <!-- mobile menu bar -->
-        <div class="lg:hidden">
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
           <i
             id="menu-icon"
             class="fa-solid text-white text-3xl fa-bars cursor-pointer"
           ></i>
         </div>
-        <!-- sign in or sign up button -->
+        <!-- Sign In/Sign Up Buttons for Desktop -->
         <div class="hidden md:flex justify-between gap-3">
           <button class="button bg" onclick="my_modal_4.showModal()">
             Sign Up
@@ -89,7 +90,7 @@
           </button>
         </div>
       </nav>
-      <!-- sign up form -->
+      <!-- Sign up / sign in modal -->
       <dialog id="my_modal_3" class="modal">
         <div class="modal-box">
           <form method="dialog" class="relative">
@@ -171,7 +172,7 @@
           </div>
         </div>
       </dialog>
-      <!-- sign in form -->
+      <!-- Sign in Form -->
       <dialog id="my_modal_4" class="modal">
         <div class="modal-box">
           <form method="dialog">
@@ -309,14 +310,16 @@
             >
           </li>
           <li class="mt-2 pt-6 border-t border-gray-700">
-            <button onclick="my_modal_4.showModal()"
+            <button
+              onclick="my_modal_4.showModal()"
               class="w-full py-3 rounded-[38px] bg-[#89CE14] text-white font-semibold"
             >
               Sign Up
             </button>
           </li>
           <li>
-            <button onclick="my_modal_3.showModal()"
+            <button
+              onclick="my_modal_3.showModal()"
               class="w-full py-3 mt-2 rounded-[38px] border border-white text-white font-semibold"
             >
               Sign In
@@ -330,7 +333,7 @@
 
       <!-- Header Content -->
       <div class="flex justify-center items-center px-[7%]">
-        <div class="py-[50%] md:py-[20%] w-[575px]">
+        <div class="py-[80%] md:py-[20%] w-[575px]">
           <h1 class="text-center text-6xl font-bold text-white py-3">
             Contact Us
           </h1>
@@ -365,7 +368,9 @@
           Lorem ipsum dolor sit amet consectetur. Congue lacinia <br />tempor
           orci tellus sollicitudin morbi. Duis
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-5 shadow-lg p-2.5 rounded-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-5 gap-5 shadow-lg p-2.5 rounded-xl"
+        >
           <div
             class="bg-gradient-to-br from-[#c4e291] to-[#a0e2d1] p-4 md:p-8 md:w-[450px] md:h-[550px] rounded-lg relative md:col-span-2"
           >
@@ -449,7 +454,7 @@
                       type="text"
                       name="name"
                       id="first-name"
-                      class="mt-2 block w-full  py-4 px-5 rounded-xl border-gray-300 focus:outline-none focus:border-gray-500"
+                      class="mt-2 block w-full py-4 px-5 rounded-xl border-gray-300 focus:outline-none focus:border-gray-500"
                       placeholder="First name"
                     />
                   </div>
@@ -519,7 +524,7 @@
                 <div class="mt-10 flex justify-center md:justify-start">
                   <button
                     type="submit"
-                    class="px-12 py-4 text-white font-semibold rounded-full shadow-lg bg-gradient-to-r from-lime-500 to-cyan-400 focus:ring-lime-500 cursor-pointer"
+                    class="md:px-12 w-full md:w-[25%] py-4  text-white font-semibold rounded-full shadow-lg bg-gradient-to-r from-lime-500 to-cyan-400 focus:ring-lime-500 cursor-pointer"
                   >
                     Send
                   </button>

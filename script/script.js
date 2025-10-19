@@ -90,5 +90,22 @@ if (menuIcon && mobileMenu && closeIcon) {
       }
     },
     true
-  ); // Use capture phase to detect clicks properly
+  );
 }
+
+let lastScroll = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll && currentScroll > 100) {
+    navbar.style.transform = "translateY(-100%)";
+    navbar.style.transition = "0.5s";
+  } else if (currentScroll < lastScroll) {
+    navbar.style.transform = "translateY(0)";
+    navbar.style.transition = "0.5s";
+  }
+
+  lastScroll = currentScroll;
+});
