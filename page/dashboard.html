@@ -1392,7 +1392,7 @@
                     </p>
                   </div>
                   <div class="flex justify-center md:justify-start">
-                    <button
+                    <button id="mapBtn"
                       class="bg text-white py-3 px-10 rounded-[38px] cursor-pointer text-lg font-semibold"
                     >
                       Go Now
@@ -1426,7 +1426,13 @@
                       to a third party
                     </p>
                     <div class="flex justify-center">
-                      <button
+                      <input
+                        type="file"
+                        id="fileInput"
+                        class="hidden"
+                        accept=".pdf,.doc,.jpg,.png"
+                      />
+                      <button id="uploadBtn"
                         class="flex items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]"
                       >
                         <img src="../images/sign.svg" alt="" />
@@ -1446,10 +1452,21 @@
                       A copy of an identification card with photo.
                     </p>
                     <div class="flex justify-center">
+                      <input
+                        type="file"
+                        id="fileInput2"
+                        class="hidden"
+                        accept=".pdf,.doc,.jpg,.png"
+                      />
                       <button
-                        class="flex items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2]"
+                        id="uploadBtn2"
+                        class="flex items-center gap-2 rate1 py-4 px-10 rounded-[38px] cursor-pointer text-[#46C0A2] bg-white  hover:bg-[#46C0A2] transition"
                       >
-                        <img src="../images/add.svg" alt="" />
+                        <img
+                          src="../images/add.svg"
+                          alt="Add Icon"
+                          class="w-5 h-5"
+                        />
                         <p>Add</p>
                       </button>
                     </div>
@@ -1607,4 +1624,5 @@
   <script src="../script/deshboard.js"></script>
   <script src="../script/menu.js"></script>
   <script src="../script/logout.js"></script>
+  <script src="../script/input.js"></script>
 </html>
